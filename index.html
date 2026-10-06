@@ -2,352 +2,29 @@
 <html lang="fr">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Portfolio professionnel | Mélissa Le Boëdec</title>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Portfolio professionnel de Mélissa Le Boëdec, conseillère emploi et évolution professionnelle."
+  >
+
+  <title>
+    Portfolio professionnel | Mélissa Le Boëdec
+  </title>
+
 
   <style>
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #faf8f5;
-      color: #343434;
-      line-height: 1.7;
-    }
-
-    /* MENU */
-
-    nav {
-      background: rgba(255,255,255,0.97);
-      padding: 18px 8%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-    }
-
-    .logo {
-      font-size: 19px;
-      font-weight: bold;
-      color: #695547;
-    }
-
-    .nav-links a {
-      text-decoration: none;
-      color: #444;
-      margin-left: 20px;
-      font-size: 14px;
-      transition: 0.3s;
-    }
-
-    .nav-links a:hover {
-      color: #8f7663;
-    }
-
-    /* ACCUEIL */
-
-    .hero {
-      min-height: 82vh;
-      display: flex;
-      align-items: center;
-      padding: 70px 10%;
-      background: linear-gradient(135deg, #eee5dc, #fbf8f4);
-    }
-
-    .hero-container {
-      width: 100%;
-      max-width: 1150px;
-      margin: auto;
-      display: grid;
-      grid-template-columns: 1.4fr 1fr;
-      gap: 65px;
-      align-items: center;
-    }
-
-    .small-title {
-      color: #8b735f;
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      font-weight: bold;
-      font-size: 14px;
-      margin-bottom: 12px;
-    }
-
-    h1 {
-      font-size: 50px;
-      line-height: 1.15;
-      color: #453a33;
-      margin-bottom: 12px;
-    }
-
-    .hero h2 {
-      color: #755f50;
-      font-size: 23px;
-      font-weight: normal;
-      margin-bottom: 25px;
-    }
-
-    .hero-description {
-      font-size: 18px;
-      max-width: 620px;
-      color: #555;
-    }
-
-    /* BOUTONS */
-
-    .buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 30px;
-    }
-
-    .button {
-      display: inline-block;
-      padding: 13px 24px;
-      border-radius: 30px;
-      text-decoration: none;
-      transition: 0.3s;
-      font-weight: 500;
-    }
-
-    .button-main {
-      background: #755d4b;
-      color: white;
-    }
-
-    .button-main:hover {
-      background: #5f493b;
-      transform: translateY(-2px);
-    }
-
-    .button-secondary {
-      border: 2px solid #755d4b;
-      color: #755d4b;
-      background: transparent;
-    }
-
-    .button-secondary:hover {
-      background: #755d4b;
-      color: white;
-    }
-
-    /* PHOTO */
-
-    .photo-wrapper {
-      display: flex;
-      justify-content: center;
-    }
-
-    .photo-wrapper img {
-      width: 310px;
-      height: 390px;
-      object-fit: cover;
-      object-position: center;
-      border-radius: 28px;
-      border: 7px solid white;
-      box-shadow: 0 18px 40px rgba(0,0,0,0.16);
-    }
-
-    /* SECTIONS */
-
-    section {
-      padding: 85px 10%;
-    }
-
-    .white-section {
-      background: white;
-    }
-
-    .section-title {
-      text-align: center;
-      font-size: 34px;
-      color: #70594a;
-      margin-bottom: 15px;
-    }
-
-    .section-subtitle {
-      text-align: center;
-      color: #777;
-      max-width: 720px;
-      margin: 0 auto 45px;
-    }
-
-    /* À PROPOS */
-
-    .about {
-      max-width: 900px;
-      margin: auto;
-      font-size: 17px;
-    }
-
-    .about p {
-      margin-bottom: 20px;
-    }
-
-    .highlight {
-      margin-top: 30px;
-      background: #f2eae2;
-      padding: 27px;
-      border-radius: 15px;
-      border-left: 5px solid #9b806c;
-    }
-
-    /* CARTES */
-
-    .cards {
-      max-width: 1150px;
-      margin: auto;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
-      gap: 22px;
-    }
-
-    .card {
-      background: white;
-      padding: 27px;
-      border-radius: 17px;
-      box-shadow: 0 7px 25px rgba(0,0,0,0.07);
-      transition: 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-    }
-
-    .card h3 {
-      color: #755d4b;
-      margin-bottom: 12px;
-      font-size: 19px;
-    }
-
-    .card p {
-      color: #555;
-      font-size: 15px;
-    }
-
-    /* PARCOURS */
-
-    .timeline {
-      max-width: 900px;
-      margin: auto;
-    }
-
-    .timeline-item {
-      border-left: 3px solid #a68a76;
-      padding: 5px 0 30px 25px;
-      position: relative;
-    }
-
-    .timeline-item::before {
-      content: "";
-      width: 13px;
-      height: 13px;
-      background: #8f7663;
-      border-radius: 50%;
-      position: absolute;
-      left: -8px;
-      top: 8px;
-    }
-
-    .timeline-item h3 {
-      color: #70594a;
-      margin-bottom: 7px;
-    }
-
-    /* PROJETS */
-
-    .project-card {
-      background: #f7f2ed;
-      text-decoration: none;
-      color: inherit;
-      display: block;
-    }
-
-    .project-card span {
-      display: inline-block;
-      margin-top: 18px;
-      color: #755d4b;
-      font-weight: bold;
-    }
-
-    .project-detail {
-      max-width: 900px;
-      margin: 40px auto 0;
-      padding: 32px;
-      border-radius: 18px;
-      background: white;
-      box-shadow: 0 7px 25px rgba(0,0,0,0.06);
-      scroll-margin-top: 100px;
-    }
-
-    .project-detail h3 {
-      color: #70594a;
-      margin-bottom: 12px;
-      font-size: 23px;
-    }
-
-    .project-detail p {
-      margin-bottom: 12px;
-    }
-
-    .project-detail strong {
-      color: #70594a;
-    }
-
-    .back-link {
-      display: inline-block;
-      margin-top: 15px;
-      color: #755d4b;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    /* QUALITÉS */
-
-    .values {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
-      max-width: 850px;
-      margin: auto;
-    }
-
-    .value {
-      background: #eee5dc;
-      padding: 12px 22px;
-      border-radius: 30px;
-      color: #604d40;
-      font-weight: bold;
-    }
-
-    /* CONTACT */
-
-    .contact
-
-Le mar. 6 oct. 2026, 13:43, Melissa le boedec <melissa.leboedec47@gmail.com> a écrit :
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Portfolio professionnel | Mélissa Le Boëdec</title>
-
-  <style>
+    /* ========================================
+       RÉGLAGES GÉNÉRAUX
+    ======================================== */
 
     * {
       margin: 0;
@@ -363,10 +40,18 @@ Le mar. 6 oct. 2026, 13:43, Melissa le boedec <melissa.leboedec47@gmail.com> a �
       line-height: 1.7;
     }
 
+    img {
+      max-width: 100%;
+    }
 
-    /* =========================
+    a {
+      transition: 0.3s;
+    }
+
+
+    /* ========================================
        MENU
-    ========================== */
+    ======================================== */
 
     nav {
       background-color: rgba(255, 255, 255, 0.97);
@@ -376,7 +61,7 @@ Le mar. 6 oct. 2026, 13:43, Melissa le boedec <melissa.leboedec47@gmail.com> a �
       align-items: center;
       position: sticky;
       top: 0;
-      z-index: 100;
+      z-index: 1000;
       box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
     }
 
@@ -386,12 +71,17 @@ Le mar. 6 oct. 2026, 13:43, Melissa le boedec <melissa.leboedec47@gmail.com> a �
       color: #695547;
     }
 
+    .nav-links {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
     .nav-links a {
       text-decoration: none;
-      color: #444;
+      color: #444444;
       margin-left: 20px;
       font-size: 14px;
-      transition: 0.3s;
     }
 
     .nav-links a:hover {
@@ -399,16 +89,21 @@ Le mar. 6 oct. 2026, 13:43, Melissa le boedec <melissa.leboedec47@gmail.com> a �
     }
 
 
-    /* =========================
+    /* ========================================
        ACCUEIL
-    ========================== */
+    ======================================== */
 
     .hero {
       min-height: 82vh;
       display: flex;
       align-items: center;
+      background:
+        linear-gradient(
+          135deg,
+          #eee5dc,
+          #fbf8f4
+        );
       padding: 70px 10%;
-      background: linear-gradient(135deg, #eee5dc, #fbf8f4);
     }
 
     .hero-container {
@@ -445,57 +140,15 @@ Le mar. 6 oct. 2026, 13:43, Melissa le boedec <melissa.leboedec47@gmail.com> a �
     }
 
     .hero-description {
-      font-size: 18px;
       max-width: 620px;
-      color: #555;
+      font-size: 18px;
+      color: #555555;
     }
 
 
-    /* =========================
-       BOUTONS
-    ========================== */
-
-    .buttons {
-      margin-top: 30px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-
-    .button {
-      display: inline-block;
-      padding: 13px 24px;
-      border-radius: 30px;
-      text-decoration: none;
-      transition: 0.3s;
-      font-weight: 500;
-    }
-
-    .button-main {
-      background-color: #755d4b;
-      color: white;
-    }
-
-    .button-main:hover {
-      background-color: #5f493b;
-      transform: translateY(-2px);
-    }
-
-    .button-secondary {
-      border: 2px solid #755d4b;
-      color: #755d4b;
-      background-color: transparent;
-    }
-
-    .button-secondary:hover {
-      background-color: #755d4b;
-      color: white;
-    }
-
-
-    /* =========================
+    /* ========================================
        PHOTO
-    ========================== */
+    ======================================== */
 
     .photo-wrapper {
       display: flex;
@@ -513,12 +166,61 @@ Le mar. 6 oct. 2026, 13:43, Melissa le boedec <melissa.leboedec47@gmail.com> a �
     }
 
 
-    /* =========================
+    /* ========================================
+       BOUTONS
+    ======================================== */
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 30px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 13px 23px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 14px;
+      min-height: 48px;
+    }
+
+    .button-main {
+      background-color: #755d4b;
+      color: white;
+      border: 2px solid #755d4b;
+    }
+
+    .button-main:hover {
+      background-color: #5f493b;
+      border-color: #5f493b;
+      transform: translateY(-2px);
+    }
+
+    .button-secondary {
+      border: 2px solid #755d4b;
+      color: #755d4b;
+      background-color: transparent;
+    }
+
+    .button-secondary:hover {
+      background-color: #755d4b;
+      color: white;
+      transform: translateY(-2px);
+    }
+
+
+    /* ========================================
        SECTIONS
-    ========================== */
+    ======================================== */
 
     section {
       padding: 85px 10%;
+      scroll-margin-top: 80px;
     }
 
     .white-section {
@@ -529,20 +231,21 @@ Le mar. 6 oct. 2026, 13:43, Melissa le boedec <melissa.leboedec47@gmail.com> a �
       text-align: center;
       font-size: 34px;
       color: #70594a;
-      margin-bottom: 15px;
+      margin-bottom: 12px;
     }
 
     .section-subtitle {
       text-align: center;
-      color: #777;
-      max-width: 720px;
-      margin: 0 auto 45px auto;
+      color: #777777;
+      max-width: 730px;
+      margin: 0 auto 45px;
+      font-size: 16px;
     }
 
 
-    /* =========================
+    /* ========================================
        À PROPOS
-    ========================== */
+    ======================================== */
 
     .about {
       max-width: 900px;
@@ -562,16 +265,21 @@ Le mar. 6 oct. 2026, 13:43, Melissa le boedec <melissa.leboedec47@gmail.com> a �
       border-left: 5px solid #9b806c;
     }
 
+    .highlight strong {
+      color: #70594a;
+    }
 
-    /* =========================
-       CARTES
-    ========================== */
+
+    /* ========================================
+       COMPÉTENCES
+    ======================================== */
 
     .cards {
       max-width: 1150px;
       margin: auto;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+      grid-template-columns:
+        repeat(auto-fit, minmax(245px, 1fr));
       gap: 22px;
     }
 
@@ -585,6 +293,7 @@ Le mar. 6 oct. 2026, 13:43, Melissa le boedec <melissa.leboedec47@gmail.com> a �
 
     .card:hover {
       transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.10);
     }
 
     .card h3 {
@@ -594,14 +303,14 @@ Le mar. 6 oct. 2026, 13:43, Melissa le boedec <melissa.leboedec47@gmail.com> a �
     }
 
     .card p {
-      color: #555;
+      color: #555555;
       font-size: 15px;
     }
 
 
-    /* =========================
+    /* ========================================
        PARCOURS
-    ========================== */
+    ======================================== */
 
     .timeline {
       max-width: 900px;
@@ -610,7 +319,7 @@ Le mar. 6 oct. 2026, 13:43, Melissa le boedec <melissa.leboedec47@gmail.com> a �
 
     .timeline-item {
       border-left: 3px solid #a68a76;
-      padding: 5px 0 30px 25px;
+      padding: 5px 0 32px 25px;
       position: relative;
     }
 
@@ -630,10 +339,14 @@ Le mar. 6 oct. 2026, 13:43, Melissa le boedec <melissa.leboedec47@gmail.com> a �
       margin-bottom: 7px;
     }
 
+    .timeline-item p {
+      color: #555555;
+    }
 
-    /* =========================
+
+    /* ========================================
        RÉALISATIONS
-    ========================== */
+    ======================================== */
 
     .project-card {
       background-color: #f7f2ed;
@@ -651,12 +364,12 @@ Le mar. 6 oct. 2026, 13:43, Melissa le boedec <melissa.leboedec47@gmail.com> a �
 
     .project-detail {
       max-width: 900px;
-      margin: 40px auto 0 auto;
+      margin: 40px auto 0;
       padding: 32px;
       border-radius: 18px;
       background-color: white;
       box-shadow: 0 7px 25px rgba(0, 0, 0, 0.06);
-      scroll-margin-top: 100px;
+      scroll-margin-top: 110px;
     }
 
     .project-detail h3 {
@@ -682,16 +395,16 @@ Le mar. 6 oct. 2026, 13:43, Melissa le boedec <melissa.leboedec47@gmail.com> a �
     }
 
 
-    /* =========================
+    /* ========================================
        QUALITÉS
-    ========================== */
+    ======================================== */
 
     .values {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 15px;
-      max-width: 850px;
+      max-width: 900px;
       margin: auto;
     }
 
@@ -704,9 +417,47 @@ Le mar. 6 oct. 2026, 13:43, Melissa le boedec <melissa.leboedec47@gmail.com> a �
     }
 
 
-    /* =========================
+    /* ========================================
+       DOCUMENTS
+    ======================================== */
+
+    .documents {
+      max-width: 950px;
+      margin: auto;
+      display: grid;
+      grid-template-columns:
+        repeat(auto-fit, minmax(240px, 1fr));
+      gap: 22px;
+    }
+
+    .document-card {
+      background-color: white;
+      border-radius: 17px;
+      padding: 30px 25px;
+      text-align: center;
+      box-shadow: 0 7px 25px rgba(0, 0, 0, 0.07);
+    }
+
+    .document-card .icon {
+      font-size: 38px;
+      margin-bottom: 12px;
+    }
+
+    .document-card h3 {
+      color: #70594a;
+      margin-bottom: 10px;
+    }
+
+    .document-card p {
+      color: #666666;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+
+    /* ========================================
        CONTACT
-    ========================== */
+    ======================================== */
 
     .contact {
       max-width: 720px;
@@ -728,9 +479,9 @@ Le mar. 6 oct. 2026, 13:43, Melissa le boedec <melissa.leboedec47@gmail.com> a �
     }
 
 
-    /* =========================
-       PIED DE PAGE
-    ========================== */
+    /* ========================================
+       FOOTER
+    ======================================== */
 
     footer {
       background-color: #493d35;
@@ -741,28 +492,29 @@ Le mar. 6 oct. 2026, 13:43, Melissa le boedec <melissa.leboedec47@gmail.com> a �
     }
 
 
-    /* =========================
+    /* ========================================
        VERSION MOBILE
-    ========================== */
+    ======================================== */
 
     @media (max-width: 850px) {
 
       nav {
         flex-direction: column;
         gap: 12px;
+        padding: 15px 5%;
       }
 
       .nav-links {
-        text-align: center;
+        justify-content: center;
       }
 
       .nav-links a {
-        margin: 0 6px;
+        margin: 4px 7px;
         font-size: 13px;
       }
 
       .hero {
-        padding: 55px 7%;
+        padding: 50px 7%;
       }
 
       .hero-container {
@@ -776,8 +528,8 @@ Le mar. 6 oct. 2026, 13:43, Melissa le boedec <melissa.leboedec47@gmail.com> a �
       }
 
       .photo-wrapper img {
-        width: 230px;
-        height: 290px;
+        width: 225px;
+        height: 285px;
       }
 
       h1 {
@@ -800,6 +552,31 @@ Le mar. 6 oct. 2026, 13:43, Melissa le boedec <melissa.leboedec47@gmail.com> a �
         padding: 65px 7%;
       }
 
+      .section-title {
+        font-size: 29px;
+      }
+
+    }
+
+
+    @media (max-width: 500px) {
+
+      .nav-links a {
+        font-size: 12px;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      .buttons {
+        flex-direction: column;
+      }
+
+      .button {
+        width: 100%;
+      }
+
     }
 
   </style>
@@ -810,9 +587,9 @@ Le mar. 6 oct. 2026, 13:43, Melissa le boedec <melissa.leboedec47@gmail.com> a �
 <body>
 
 
-  <!-- =========================
+  <!-- ========================================
        MENU
-  ========================== -->
+  ========================================= -->
 
   <nav>
 
@@ -821,45 +598,73 @@ Le mar. 6 oct. 2026, 13:43, Melissa le boedec <melissa.leboedec47@gmail.com> a �
     </div>
 
     <div class="nav-links">
-      <a href="#about">À propos</a>
-      <a href="#skills">Compétences</a>
-      <a href="#journey">Parcours</a>
-      <a href="#projects">Réalisations</a>
-      <a href="#contact">Contact</a>
+
+      <a href="#about">
+        À propos
+      </a>
+
+      <a href="#skills">
+        Compétences
+      </a>
+
+      <a href="#journey">
+        Parcours
+      </a>
+
+      <a href="#projects">
+        Réalisations
+      </a>
+
+      <a href="#documents">
+        Documents
+      </a>
+
+      <a href="#contact">
+        Contact
+      </a>
+
     </div>
 
   </nav>
 
 
-  <!-- =========================
+  <!-- ========================================
        ACCUEIL
-  ========================== -->
+  ========================================= -->
 
   <header class="hero">
 
     <div class="hero-container">
 
-      <div class="hero-text">
+
+      <div>
 
         <p class="small-title">
           Portfolio professionnel
         </p>
 
+
         <h1>
           Mélissa Le Boëdec
         </h1>
+
 
         <h2>
           Conseillère emploi et évolution professionnelle
         </h2>
 
+
         <p class="hero-description">
-          Accompagner, écouter, valoriser et permettre à chacun
-          de devenir acteur de son parcours professionnel.
+
+          Accompagner, écouter, valoriser
+          et permettre à chacun de devenir acteur
+          de son parcours professionnel.
+
         </p>
 
 
         <div class="buttons">
+
 
           <a
             class="button button-main"
@@ -870,12 +675,21 @@ Le mar. 6 oct. 2026, 13:43, Melissa le boedec <melissa.leboedec47@gmail.com> a �
 
 
           <a
-  class="button button-secondary"
-  href="CV_MELISSA_LE%20BOEDEC.pdf"
-  target="_blank"
->
-  📄 Voir mon CV
-</a>
+            class="button button-secondary"
+            href="CV_MELISSA_LE%20BOEDEC.pdf"
+            target="_blank"
+          >
+            📄 Voir mon CV
+          </a>
+
+
+          <a
+            class="button button-secondary"
+            href="lettre-motivation-melissa-le-boedec.pdf"
+            target="_blank"
+          >
+            ✉️ Lettre de motivation
+          </a>
 
 
           <a
@@ -887,6 +701,7 @@ Le mar. 6 oct. 2026, 13:43, Melissa le boedec <melissa.leboedec47@gmail.com> a �
             in LinkedIn
           </a>
 
+
         </div>
 
       </div>
@@ -895,79 +710,104 @@ Le mar. 6 oct. 2026, 13:43, Melissa le boedec <melissa.leboedec47@gmail.com> a �
       <div class="photo-wrapper">
 
         <img
-          src="20260417_091730 (1).jpg"
+          src="20260417_091730%20(1).jpg"
           alt="Portrait professionnel de Mélissa Le Boëdec"
         >
 
       </div>
+
 
     </div>
 
   </header>
 
 
-  <!-- =========================
+  <!-- ========================================
        À PROPOS
-  ========================== -->
+  ========================================= -->
 
-  <section id="about" class="white-section">
+  <section
+    id="about"
+    class="white-section"
+  >
 
     <h2 class="section-title">
       À propos de moi
     </h2>
 
+
     <p class="section-subtitle">
-      Une reconversion professionnelle guidée par l'envie
-      d'accompagner, d'écouter et de valoriser les personnes.
+
+      Une reconversion professionnelle
+      guidée par l'envie d'accompagner,
+      d'écouter et de valoriser les personnes.
+
     </p>
 
 
     <div class="about">
 
+
       <p>
-        Mon parcours professionnel m'a permis de développer
-        des qualités essentielles telles que l'autonomie,
-        l'adaptabilité, l'organisation, le sens du service
+
+        Mon parcours professionnel m'a permis
+        de développer des qualités essentielles
+        telles que l'autonomie, l'adaptabilité,
+        l'organisation, le sens du service
         et le contact avec différents publics.
+
       </p>
 
+
       <p>
+
         Après plusieurs années d'expérience professionnelle,
-        j'ai choisi de donner une nouvelle direction à mon parcours
-        en me formant dans le domaine de l'accompagnement vers l'emploi
+        j'ai choisi de donner une nouvelle direction
+        à mon parcours en me formant dans le domaine
+        de l'accompagnement vers l'emploi
         et de l'évolution professionnelle.
+
       </p>
 
+
       <p>
-        Cette reconversion correspond pleinement à ce qui m'anime :
+
+        Cette reconversion correspond pleinement
+        à ce qui m'anime :
         écouter, comprendre les besoins d'une personne,
-        identifier ses ressources, valoriser ses compétences
+        identifier ses ressources,
+        valoriser ses compétences
         et l'aider à construire un projet professionnel
         réaliste, motivant et adapté à sa situation.
+
       </p>
 
 
       <div class="highlight">
 
-        <strong>Ce qui me motive :</strong>
+        <strong>
+          Ce qui me motive :
+        </strong>
 
         <br><br>
 
-        Créer une relation de confiance, permettre à chacun
-        de prendre conscience de ses capacités
+        Créer une relation de confiance,
+        permettre à chacun de prendre conscience
+        de ses capacités
         et transformer un objectif professionnel
         en étapes concrètes.
 
       </div>
+
 
     </div>
 
   </section>
 
 
-  <!-- =========================
+  <!-- ========================================
        COMPÉTENCES
-  ========================== -->
+  ========================================= -->
 
   <section id="skills">
 
@@ -975,9 +815,13 @@ Le mar. 6 oct. 2026, 13:43, Melissa le boedec <melissa.leboedec47@gmail.com> a �
       Mes compétences
     </h2>
 
+
     <p class="section-subtitle">
-      Des compétences développées au cours de ma formation
+
+      Des compétences développées
+      au cours de ma formation
       et de mes différentes expériences professionnelles.
+
     </p>
 
 
@@ -986,12 +830,16 @@ Le mar. 6 oct. 2026, 13:43, Melissa le boedec <melissa.leboedec47@gmail.com> a �
 
       <div class="card">
 
-        <h3>🤝 Accompagnement</h3>
+        <h3>
+          🤝 Accompagnement
+        </h3>
 
         <p>
-          Accueillir, écouter et accompagner une personne
-          dans la construction et la sécurisation
-          de son parcours professionnel.
+
+          Accueillir, écouter et accompagner
+          une personne dans la construction
+          et la sécurisation de son parcours professionnel.
+
         </p>
 
       </div>
@@ -999,12 +847,17 @@ Le mar. 6 oct. 2026, 13:43, Melissa le boedec <melissa.leboedec47@gmail.com> a �
 
       <div class="card">
 
-        <h3>🔎 Diagnostic</h3>
+        <h3>
+          🔎 Diagnostic
+        </h3>
 
         <p>
-          Analyser une situation et identifier
-          les besoins, les compétences,
-          les freins et les leviers.
+
+          Analyser une situation
+          et identifier les besoins,
+          les compétences, les freins
+          et les leviers.
+
         </p>
 
       </div>
@@ -1012,12 +865,16 @@ Le mar. 6 oct. 2026, 13:43, Melissa le boedec <melissa.leboedec47@gmail.com> a �
 
       <div class="card">
 
-        <h3>🎯 Projet professionnel</h3>
+        <h3>
+          🎯 Projet professionnel
+        </h3>
 
         <p>
+
           Aider à définir un objectif professionnel
-          et construire un plan d'action adapté
-          à chaque situation.
+          et construire un plan d'action
+          adapté à la situation.
+
         </p>
 
       </div>
@@ -1025,13 +882,17 @@ Le mar. 6 oct. 2026, 13:43, Melissa le boedec <melissa.leboedec47@gmail.com> a �
 
       <div class="card">
 
-        <h3>💼 Recherche d'emploi</h3>
+        <h3>
+          💼 Recherche d'emploi
+        </h3>
 
         <p>
+
           Accompagner dans la réalisation du CV,
           de la lettre de motivation,
           du pitch professionnel
           et la préparation aux entretiens.
+
         </p>
 
       </div>
@@ -1039,12 +900,17 @@ Le mar. 6 oct. 2026, 13:43, Melissa le boedec <melissa.leboedec47@gmail.com> a �
 
       <div class="card">
 
-        <h3>📊 Veille professionnelle</h3>
+        <h3>
+          📊 Veille professionnelle
+        </h3>
 
         <p>
-          Rechercher, sélectionner et analyser
-          des informations liées à l'emploi,
-          à la formation et au marché du travail.
+
+          Rechercher, sélectionner
+          et analyser des informations
+          liées à l'emploi, à la formation
+          et au marché du travail.
+
         </p>
 
       </div>
@@ -1052,35 +918,46 @@ Le mar. 6 oct. 2026, 13:43, Melissa le boedec <melissa.leboedec47@gmail.com> a �
 
       <div class="card">
 
-        <h3>🗣️ Animation d'ateliers</h3>
+        <h3>
+          🗣️ Animation d'ateliers
+        </h3>
 
         <p>
+
           Concevoir et animer des ateliers
           favorisant l'autonomie,
           l'information et la valorisation
           des compétences.
+
         </p>
 
       </div>
+
 
     </div>
 
   </section>
 
 
-  <!-- =========================
+  <!-- ========================================
        PARCOURS
-  ========================== -->
+  ========================================= -->
 
-  <section id="journey" class="white-section">
+  <section
+    id="journey"
+    class="white-section"
+  >
 
     <h2 class="section-title">
       Mon parcours
     </h2>
 
+
     <p class="section-subtitle">
+
       Un parcours professionnel riche d'expériences
       et aujourd'hui tourné vers l'accompagnement.
+
     </p>
 
 
@@ -1094,8 +971,15 @@ Le mar. 6 oct. 2026, 13:43, Melissa le boedec <melissa.leboedec47@gmail.com> a �
         </h3>
 
         <p>
-          Formation dans le domaine du conseil en emploi
-          et de l'évolution professionnelle.
+
+          Formation dans le domaine
+          du conseil en emploi
+          et de l'évolution professionnelle,
+          avec développement de compétences
+          liées à l'accompagnement,
+          au diagnostic,
+          à l'emploi et à la formation.
+
         </p>
 
       </div>
@@ -1104,15 +988,17 @@ Le mar. 6 oct. 2026, 13:43, Melissa le boedec <melissa.leboedec47@gmail.com> a �
       <div class="timeline-item">
 
         <h3>
-          Expériences professionnelles
+          Relation client et commerce
         </h3>
 
         <p>
-          Plusieurs années d'expérience professionnelle
+
+          Des expériences professionnelles
+          dans la vente et la relation client
           m'ayant permis de développer
-          autonomie, organisation, adaptabilité,
-          sens du service, sens des responsabilités
-          et qualités relationnelles.
+          écoute, communication,
+          conseil et sens du service.
+
         </p>
 
       </div>
@@ -1121,37 +1007,64 @@ Le mar. 6 oct. 2026, 13:43, Melissa le boedec <melissa.leboedec47@gmail.com> a �
       <div class="timeline-item">
 
         <h3>
-          Une reconversion tournée vers l'humain
+          Expérience de terrain
         </h3>
 
         <p>
-          Aujourd'hui, je souhaite mettre
+
+          Plusieurs années d'expérience professionnelle
+          m'ont permis de renforcer
+          mon autonomie, mon organisation,
+          ma rigueur, mon adaptabilité
+          et mon sens des responsabilités.
+
+        </p>
+
+      </div>
+
+
+      <div class="timeline-item">
+
+        <h3>
+          Aujourd'hui
+        </h3>
+
+        <p>
+
+          Mon objectif est de mettre
           mon expérience, mes compétences
           et mes qualités relationnelles
-          au service de l'accompagnement professionnel.
+          au service de l'accompagnement
+          vers l'emploi et de l'évolution professionnelle.
+
         </p>
 
       </div>
+
 
     </div>
 
   </section>
 
 
-  <!-- =========================
+  <!-- ========================================
        RÉALISATIONS
-  ========================== -->
+  ========================================= -->
 
   <section id="projects">
+
 
     <h2 class="section-title">
       Mes réalisations
     </h2>
 
+
     <p class="section-subtitle">
-      Quelques exemples de travaux réalisés au cours
-      de ma formation. Cliquez sur un projet
-      pour en savoir davantage.
+
+      Quelques exemples de travaux
+      réalisés au cours de ma formation.
+      Cliquez sur un projet pour le découvrir.
+
     </p>
 
 
@@ -1168,9 +1081,11 @@ Le mar. 6 oct. 2026, 13:43, Melissa le boedec <melissa.leboedec47@gmail.com> a �
         </h3>
 
         <p>
-          Analyse du territoire, du marché du travail,
+
+          Analyse du marché du travail,
           des secteurs qui recrutent
-          et des acteurs de l'emploi.
+          et des acteurs du territoire.
+
         </p>
 
         <span>
@@ -1190,9 +1105,11 @@ Le mar. 6 oct. 2026, 13:43, Melissa le boedec <melissa.leboedec47@gmail.com> a �
         </h3>
 
         <p>
+
           Analyse d'une situation
-          et construction d'un accompagnement
-          individualisé.
+          et construction
+          d'un accompagnement individualisé.
+
         </p>
 
         <span>
@@ -1212,9 +1129,11 @@ Le mar. 6 oct. 2026, 13:43, Melissa le boedec <melissa.leboedec47@gmail.com> a �
         </h3>
 
         <p>
+
           CV, lettre de motivation,
           pitch professionnel
           et valorisation des compétences.
+
         </p>
 
         <span>
@@ -1234,8 +1153,11 @@ Le mar. 6 oct. 2026, 13:43, Melissa le boedec <melissa.leboedec47@gmail.com> a �
         </h3>
 
         <p>
-          Atelier autour de l'intelligence artificielle
-          et de son impact sur différents métiers.
+
+          Création d'un atelier
+          autour de l'intelligence artificielle
+          et de son impact sur les métiers.
+
         </p>
 
         <span>
@@ -1243,6 +1165,7 @@ Le mar. 6 oct. 2026, 13:43, Melissa le boedec <melissa.leboedec47@gmail.com> a �
         </span>
 
       </a>
+
 
     </div>
 
@@ -1258,25 +1181,41 @@ Le mar. 6 oct. 2026, 13:43, Melissa le boedec <melissa.leboedec47@gmail.com> a �
         📍 Étude du bassin d'emploi d'Agen
       </h3>
 
-      <p>
-        Ce travail m'a permis d'étudier
-        le fonctionnement du marché de l'emploi
-        sur le bassin d'Agen.
-      </p>
 
       <p>
-        <strong>Travail réalisé :</strong>
+
+        Analyse du fonctionnement
+        du marché de l'emploi
+        sur le bassin d'Agen.
+
+      </p>
+
+
+      <p>
+
+        <strong>
+          Travail réalisé :
+        </strong>
+
         recherche de données,
         analyse des secteurs d'activité,
         identification des métiers qui recrutent
         et repérage des acteurs du territoire.
+
       </p>
 
+
       <p>
-        <strong>Compétences mobilisées :</strong>
-        veille, analyse, synthèse
-        et connaissance du territoire.
+
+        <strong>
+          Compétences mobilisées :
+        </strong>
+
+        veille, analyse,
+        synthèse et connaissance du territoire.
+
       </p>
+
 
       <a
         class="back-link"
@@ -1299,25 +1238,42 @@ Le mar. 6 oct. 2026, 13:43, Melissa le boedec <melissa.leboedec47@gmail.com> a �
         📋 Diagnostic professionnel
       </h3>
 
+
       <p>
-        Réalisation d'une analyse permettant
-        d'identifier la situation,
-        les besoins, les ressources
+
+        Analyse permettant d'identifier
+        la situation, les besoins,
+        les ressources, les compétences
         et les éventuels freins
         d'une personne accompagnée.
+
       </p>
 
-      <p>
-        <strong>Objectif :</strong>
-        proposer un accompagnement individualisé
-        et construire un plan d'action réaliste.
-      </p>
 
       <p>
-        <strong>Compétences mobilisées :</strong>
-        écoute active, analyse,
-        reformulation et construction d'objectifs.
+
+        <strong>
+          Objectif :
+        </strong>
+
+        construire un accompagnement individualisé
+        et un plan d'action réaliste.
+
       </p>
+
+
+      <p>
+
+        <strong>
+          Compétences mobilisées :
+        </strong>
+
+        écoute active,
+        analyse, reformulation
+        et construction d'objectifs.
+
+      </p>
+
 
       <a
         class="back-link"
@@ -1340,25 +1296,39 @@ Le mar. 6 oct. 2026, 13:43, Melissa le boedec <melissa.leboedec47@gmail.com> a �
         🎤 Atelier Marketing de soi
       </h3>
 
-      <p>
-        Création d'un atelier permettant
-        de mieux valoriser son profil professionnel
-        auprès des recruteurs.
-      </p>
 
       <p>
-        Le travail porte notamment
-        sur le CV, la lettre de motivation,
-        le pitch professionnel
-        et la mise en valeur des compétences.
+
+        Création d'un atelier
+        consacré à la valorisation
+        du profil professionnel.
+
       </p>
 
+
       <p>
-        <strong>Compétences mobilisées :</strong>
-        animation, communication,
+
+        Travail autour du CV,
+        de la lettre de motivation,
+        du pitch professionnel
+        et de la mise en valeur des compétences.
+
+      </p>
+
+
+      <p>
+
+        <strong>
+          Compétences mobilisées :
+        </strong>
+
+        animation,
+        communication,
         conception d'outils
         et accompagnement à la recherche d'emploi.
+
       </p>
+
 
       <a
         class="back-link"
@@ -1381,26 +1351,40 @@ Le mar. 6 oct. 2026, 13:43, Melissa le boedec <melissa.leboedec47@gmail.com> a �
         🤖 IA et évolution des métiers
       </h3>
 
-      <p>
-        Création d'un atelier portant
-        sur l'intelligence artificielle
-        et son influence sur l'évolution
-        des métiers et des compétences.
-      </p>
 
       <p>
-        L'analyse a notamment porté
+
+        Création d'un atelier
+        consacré à l'intelligence artificielle
+        et à son influence
+        sur l'évolution des métiers.
+
+      </p>
+
+
+      <p>
+
+        Le travail a notamment porté
         sur le développement web,
         le marketing digital
         et les métiers de la data.
+
       </p>
 
+
       <p>
-        <strong>Compétences mobilisées :</strong>
-        veille, analyse des métiers,
+
+        <strong>
+          Compétences mobilisées :
+        </strong>
+
+        veille,
+        analyse des métiers,
         conception pédagogique
         et animation.
+
       </p>
+
 
       <a
         class="back-link"
@@ -1411,23 +1395,28 @@ Le mar. 6 oct. 2026, 13:43, Melissa le boedec <melissa.leboedec47@gmail.com> a �
 
     </div>
 
+
   </section>
 
 
-  <!-- =========================
+  <!-- ========================================
        QUALITÉS
-  ========================== -->
+  ========================================= -->
 
   <section class="white-section">
+
 
     <h2 class="section-title">
       Mes qualités professionnelles
     </h2>
 
+
     <p class="section-subtitle">
+
       Des qualités que je souhaite mettre
       au service des personnes accompagnées
       et de mon futur environnement professionnel.
+
     </p>
 
 
@@ -1467,850 +1456,202 @@ Le mar. 6 oct. 2026, 13:43, Melissa le boedec <melissa.leboedec47@gmail.com> a �
 
     </div>
 
+
   </section>
 
 
-  <!-- =========================
-       CONTACT
-  ========================== -->
+  <!-- ========================================
+       DOCUMENTS
+  ========================================= -->
 
-  <section id="contact">
+  <section id="documents">
+
+
+    <h2 class="section-title">
+      Mes documents
+    </h2>
+
+
+    <p class="section-subtitle">
+
+      Retrouvez ici les principaux documents
+      permettant de découvrir
+      plus précisément mon profil professionnel.
+
+    </p>
+
+
+    <div class="documents">
+
+
+      <div class="document-card">
+
+        <div class="icon">
+          📄
+        </div>
+
+        <h3>
+          Mon CV
+        </h3>
+
+        <p>
+          Retrouvez mon parcours,
+          mes formations,
+          mes expériences et mes compétences.
+        </p>
+
+        <a
+          class="button button-main"
+          href="CV_MELISSA_LE%20BOEDEC.pdf"
+          target="_blank"
+        >
+          Consulter mon CV
+        </a>
+
+      </div>
+
+
+      <div class="document-card">
+
+        <div class="icon">
+          ✉️
+        </div>
+
+        <h3>
+          Lettre de motivation
+        </h3>
+
+        <p>
+          Découvrez mes motivations,
+          mon projet professionnel
+          et ce qui m'anime dans l'accompagnement.
+        </p>
+
+        <a
+          class="button button-main"
+          href="lettre-motivation-melissa-le-boedec.pdf"
+          target="_blank"
+        >
+          Lire ma lettre
+        </a>
+
+      </div>
+
+
+      <div class="document-card">
+
+        <div class="icon">
+          💼
+        </div>
+
+        <h3>
+          LinkedIn
+        </h3>
+
+        <p>
+          Retrouvez mon profil professionnel
+          et mon parcours sur LinkedIn.
+        </p>
+
+        <a
+          class="button button-main"
+          href="https://www.linkedin.com/in/melissa-le-boedec-265b60304/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Voir mon LinkedIn
+        </a>
+
+      </div>
+
+
+    </div>
+
+
+  </section>
+
+
+  <!-- ========================================
+       CONTACT
+  ========================================= -->
+
+  <section
+    id="contact"
+    class="white-section"
+  >
+
 
     <h2 class="section-title">
       Me contacter
     </h2>
 
+
     <p class="section-subtitle">
+
       Une opportunité professionnelle,
       une question sur mon parcours
       ou simplement l'envie d'échanger ?
+
     </p>
 
 
     <div class="contact">
 
+
       <p>
+
         Je serai ravie d'échanger avec vous
         concernant mon parcours,
-        mes compétences et mon projet professionnel.
+        mes compétences
+        ou mon projet professionnel.
+
       </p>
 
 
       <div class="contact-buttons">
 
+
         <a
           class="button button-main"
-          href="cv-melissa-le-boedec.pdf"
+          href="https://www.linkedin.com/in/melissa-le-boedec-265b60304/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          💼 Me contacter via LinkedIn
+        </a>
+
+
+        <a
+          class="button button-secondary"
+          href="CV_MELISSA_LE%20BOEDEC.pdf"
           target="_blank"
         >
           📄 Consulter mon CV
         </a>
 
 
-        <a
-          class="button button-secondary"
-          href="https://www.linkedin.com/in/melissa-le-boedec-265b60304/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          in Me retrouver sur LinkedIn
-        </a>
-
       </div>
 
+
     </div>
+
 
   </section>
 
 
-  <!-- =========================
+  <!-- ========================================
        PIED DE PAGE
-  ========================== -->
+  ========================================= -->
 
   <footer>
 
     <p>
-      © 2026 Mélissa Le Boëdec — Portfolio professionnel
+      © 2026 Mélissa Le Boëdec
+      — Portfolio professionnel
     </p>
 
   </footer>
 
-
-</body>
-
-</html>
-
-Le mar. 6 oct. 2026, 13:36, Melissa le boedec <melissa.leboedec47@gmail.com> a écrit :
-Melissa le boedec | LinkedIn
-
-Le mar. 6 oct. 2026 à 13:32, Melissa le boedec <melissa.leboedec47@gmail.com> a écrit :
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Portfolio professionnel | Mélissa Le Boëdec</title>
-
-  <style>
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: #faf8f5;
-      color: #343434;
-      line-height: 1.7;
-    }
-
-    /* MENU */
-
-    nav {
-      background-color: rgba(255,255,255,0.96);
-      padding: 18px 8%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-    }
-
-    .logo {
-      font-size: 19px;
-      font-weight: bold;
-      color: #695547;
-    }
-
-    .nav-links a {
-      text-decoration: none;
-      color: #444;
-      margin-left: 22px;
-      font-size: 14px;
-      transition: 0.3s;
-    }
-
-    .nav-links a:hover {
-      color: #8f7663;
-    }
-
-    /* ACCUEIL */
-
-    .hero {
-      min-height: 82vh;
-      display: flex;
-      align-items: center;
-      background: linear-gradient(135deg, #eee5dc, #fbf8f4);
-      padding: 70px 10%;
-    }
-
-    .hero-container {
-      width: 100%;
-      max-width: 1150px;
-      margin: auto;
-      display: grid;
-      grid-template-columns: 1.4fr 1fr;
-      gap: 65px;
-      align-items: center;
-    }
-
-    .small-title {
-      color: #8b735f;
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      font-weight: bold;
-      font-size: 14px;
-      margin-bottom: 12px;
-    }
-
-    h1 {
-      font-size: 50px;
-      line-height: 1.15;
-      color: #453a33;
-      margin-bottom: 12px;
-    }
-
-    .hero h2 {
-      color: #755f50;
-      font-size: 23px;
-      font-weight: normal;
-      margin-bottom: 25px;
-    }
-
-    .hero-description {
-      font-size: 18px;
-      max-width: 620px;
-      color: #555;
-    }
-
-    .main-button {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 14px 27px;
-      background-color: #755d4b;
-      color: white;
-      text-decoration: none;
-      border-radius: 30px;
-      transition: 0.3s;
-    }
-
-    .main-button:hover {
-      background-color: #5f493b;
-      transform: translateY(-2px);
-    }
-
-    /* PHOTO */
-
-    .photo-wrapper {
-      display: flex;
-      justify-content: center;
-    }
-
-    .photo-wrapper img {
-      width: 310px;
-      height: 390px;
-      object-fit: cover;
-      object-position: center;
-      border-radius: 28px;
-      border: 7px solid white;
-      box-shadow: 0 18px 40px rgba(0,0,0,0.16);
-    }
-
-    /* SECTIONS */
-
-    section {
-      padding: 85px 10%;
-    }
-
-    .white-section {
-      background-color: white;
-    }
-
-    .section-title {
-      text-align: center;
-      font-size: 34px;
-      color: #70594a;
-      margin-bottom: 15px;
-    }
-
-    .section-subtitle {
-      text-align: center;
-      color: #777;
-      max-width: 700px;
-      margin: 0 auto 45px auto;
-    }
-
-    /* À PROPOS */
-
-    .about {
-      max-width: 900px;
-      margin: auto;
-      font-size: 17px;
-    }
-
-    .about p {
-      margin-bottom: 20px;
-    }
-
-    .highlight {
-      margin-top: 30px;
-      background-color: #f2eae2;
-      padding: 27px;
-      border-radius: 15px;
-      border-left: 5px solid #9b806c;
-    }
-
-    /* COMPÉTENCES */
-
-    .cards {
-      max-width: 1150px;
-      margin: auto;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
-      gap: 22px;
-    }
-
-    .card {
-      background-color: white;
-      padding: 27px;
-      border-radius: 17px;
-      box-shadow: 0 7px 25px rgba(0,0,0,0.07);
-      transition: 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-    }
-
-    .card h3 {
-      color: #755d4b;
-      margin-bottom: 12px;
-      font-size: 19px;
-    }
-
-    .card p {
-      color: #555;
-      font-size: 15px;
-    }
-
-    /* PARCOURS */
-
-    .timeline {
-      max-width: 900px;
-      margin: auto;
-    }
-
-    .timeline-item {
-      border-left: 3px solid #a68a76;
-      padding: 5px 0 30px 25px;
-      position: relative;
-    }
-
-    .timeline-item::before {
-      content: "";
-      width: 13px;
-      height: 13px;
-      background-color: #8f7663;
-      border-radius: 50%;
-      position: absolute;
-      left: -8px;
-      top: 8px;
-    }
-
-    .timeline-item h3 {
-      color: #70594a;
-      margin-bottom: 7px;
-    }
-
-    /* RÉALISATIONS */
-
-    .projects .card {
-      background-color: #f7f2ed;
-    }
-
-    /* VALEURS */
-
-    .values {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
-      max-width: 850px;
-      margin: auto;
-    }
-
-    .value {
-      background: #eee5dc;
-      padding: 12px 22px;
-      border-radius: 30px;
-      color: #604d40;
-      font-weight: bold;
-    }
-
-    /* CONTACT */
-
-    .contact {
-      max-width: 720px;
-      margin: auto;
-      text-align: center;
-    }
-
-    .contact p {
-      font-size: 17px;
-      margin-bottom: 12px;
-    }
-
-    /* PIED DE PAGE */
-
-    footer {
-      background-color: #493d35;
-      color: white;
-      text-align: center;
-      padding: 28px 15px;
-      font-size: 14px;
-    }
-
-    /* VERSION MOBILE */
-
-    @media (max-width: 850px) {
-
-      nav {
-        flex-direction: column;
-        gap: 12px;
-      }
-
-      .nav-links {
-        text-align: center;
-      }
-
-      .nav-links a {
-        margin: 0 7px;
-        font-size: 13px;
-      }
-
-      .hero {
-        padding: 55px 7%;
-      }
-
-      .hero-container {
-        grid-template-columns: 1fr;
-        text-align: center;
-        gap: 35px;
-      }
-
-      .photo-wrapper {
-        order: -1;
-      }
-
-      .photo-wrapper img {
-        width: 230px;
-        height: 290px;
-      }
-
-      h1 {
-        font-size: 38px;
-      }
-
-      .hero h2 {
-        font-size: 20px;
-      }
-
-      .hero-description {
-        margin: auto;
-      }
-
-      section {
-        padding: 65px 7%;
-      }
-
-    }
-
-  </style>
-
-</head>
-
-<body>
-
-  <!-- MENU -->
-
-  <nav>
-
-    <div class="logo">
-      Mélissa Le Boëdec
-    </div>
-
-    <div class="nav-links">
-      <a href="#about">À propos</a>
-      <a href="#skills">Compétences</a>
-      <a href="#journey">Parcours</a>
-      <a href="#projects">Réalisations</a>
-      <a href="#contact">Contact</a>
-    </div>
-
-  </nav>
-
-
-  <!-- ACCUEIL -->
-
-  <header class="hero">
-
-    <div class="hero-container">
-
-      <div class="hero-text">
-
-        <p class="small-title">
-          Portfolio professionnel
-        </p>
-
-        <h1>
-          Mélissa Le Boëdec
-        </h1>
-
-        <h2>
-          Conseillère emploi et évolution professionnelle
-        </h2>
-
-        <p class="hero-description">
-          Accompagner, écouter, valoriser et permettre à chacun
-          de devenir acteur de son parcours professionnel.
-        </p>
-
-        <a class="main-button" href="#about">
-          Découvrir mon parcours
-        </a>
-
-      </div>
-
-
-      <div class="photo-wrapper">
-
-        <img
-          src="20260417_091730 (1).jpg"
-          alt="Portrait professionnel de Mélissa Le Boëdec"
-        >
-
-      </div>
-
-    </div>
-
-  </header>
-
-
-  <!-- À PROPOS -->
-
-  <section id="about" class="white-section">
-
-    <h2 class="section-title">
-      À propos de moi
-    </h2>
-
-    <p class="section-subtitle">
-      Une reconversion professionnelle guidée par l'envie
-      d'accompagner et de valoriser les personnes.
-    </p>
-
-
-    <div class="about">
-
-      <p>
-        Mon parcours professionnel m'a permis de développer des qualités
-        essentielles telles que l'autonomie, l'adaptabilité,
-        l'organisation, le sens du service et le contact avec différents publics.
-      </p>
-
-      <p>
-        Après plusieurs années d'expérience professionnelle,
-        j'ai choisi de donner une nouvelle direction à mon parcours
-        en me formant dans le domaine de l'accompagnement vers l'emploi
-        et de l'évolution professionnelle.
-      </p>
-
-      <p>
-        Cette reconversion correspond pleinement à ce qui m'anime :
-        écouter, comprendre les besoins d'une personne,
-        identifier ses ressources, valoriser ses compétences
-        et l'aider à construire un projet professionnel réaliste,
-        motivant et adapté à sa situation.
-      </p>
-
-      <div class="highlight">
-
-        <strong>Ce qui me motive :</strong><br>
-
-        Créer une relation de confiance, permettre à chacun
-        de prendre conscience de ses capacités et transformer
-        un objectif professionnel en étapes concrètes.
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- COMPÉTENCES -->
-
-  <section id="skills">
-
-    <h2 class="section-title">
-      Mes compétences
-    </h2>
-
-    <p class="section-subtitle">
-      Des compétences développées au cours de ma formation
-      et de mes différentes expériences professionnelles.
-    </p>
-
-
-    <div class="cards">
-
-      <div class="card">
-
-        <h3>🤝 Accompagnement</h3>
-
-        <p>
-          Accueillir, écouter et accompagner une personne
-          dans la construction et la sécurisation
-          de son parcours professionnel.
-        </p>
-
-      </div>
-
-
-      <div class="card">
-
-        <h3>🔎 Diagnostic</h3>
-
-        <p>
-          Analyser une situation et identifier les besoins,
-          les compétences, les freins et les leviers.
-        </p>
-
-      </div>
-
-
-      <div class="card">
-
-        <h3>🎯 Projet professionnel</h3>
-
-        <p>
-          Aider à définir un objectif professionnel
-          et construire un plan d'action adapté.
-        </p>
-
-      </div>
-
-
-      <div class="card">
-
-        <h3>💼 Recherche d'emploi</h3>
-
-        <p>
-          Accompagner la réalisation du CV,
-          de la lettre de motivation,
-          du pitch et la préparation aux entretiens.
-        </p>
-
-      </div>
-
-
-      <div class="card">
-
-        <h3>📊 Veille professionnelle</h3>
-
-        <p>
-          Rechercher, sélectionner et analyser
-          des informations relatives à l'emploi,
-          la formation et au marché du travail.
-        </p>
-
-      </div>
-
-
-      <div class="card">
-
-        <h3>🗣️ Animation d'ateliers</h3>
-
-        <p>
-          Concevoir et animer des ateliers
-          favorisant l'autonomie,
-          l'information et la valorisation des compétences.
-        </p>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- PARCOURS -->
-
-  <section id="journey" class="white-section">
-
-    <h2 class="section-title">
-      Mon parcours
-    </h2>
-
-    <p class="section-subtitle">
-      Un parcours professionnel riche d'expériences
-      et aujourd'hui tourné vers l'accompagnement.
-    </p>
-
-
-    <div class="timeline">
-
-      <div class="timeline-item">
-
-        <h3>2026 — Formation professionnelle</h3>
-
-        <p>
-          Formation dans le domaine du conseil en emploi
-          et de l'évolution professionnelle.
-        </p>
-
-      </div>
-
-
-      <div class="timeline-item">
-
-        <h3>Expériences professionnelles</h3>
-
-        <p>
-          Plusieurs années d'expérience dans des environnements
-          professionnels variés m'ayant permis de développer
-          autonomie, organisation, adaptabilité,
-          sens des responsabilités et relation client.
-        </p>
-
-      </div>
-
-
-      <div class="timeline-item">
-
-        <h3>Une reconversion tournée vers l'humain</h3>
-
-        <p>
-          Aujourd'hui, je souhaite mettre mes compétences,
-          mon expérience et mes qualités relationnelles
-          au service de l'accompagnement professionnel.
-        </p>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- RÉALISATIONS -->
-
-  <section id="projects" class="projects">
-
-    <h2 class="section-title">
-      Mes réalisations
-    </h2>
-
-    <p class="section-subtitle">
-      Quelques exemples de travaux réalisés
-      au cours de ma formation.
-    </p>
-
-
-    <div class="cards">
-
-      <div class="card">
-
-        <h3>📍 Étude du bassin d'emploi d'Agen</h3>
-
-        <p>
-          Analyse du territoire,
-          du marché du travail,
-          des secteurs qui recrutent
-          et des principaux acteurs de l'emploi.
-        </p>
-
-      </div>
-
-
-      <div class="card">
-
-        <h3>📋 Diagnostic professionnel</h3>
-
-        <p>
-          Analyse d'une situation,
-          identification des besoins
-          et construction d'un accompagnement individualisé.
-        </p>
-
-      </div>
-
-
-      <div class="card">
-
-        <h3>🎤 Marketing de soi</h3>
-
-        <p>
-          Travail autour du CV,
-          de la lettre de motivation,
-          du pitch professionnel
-          et de la valorisation des compétences.
-        </p>
-
-      </div>
-
-
-      <div class="card">
-
-        <h3>🤖 IA et évolution des métiers</h3>
-
-        <p>
-          Création d'un atelier autour
-          de l'intelligence artificielle
-          et de son impact sur différents métiers,
-          notamment le développement web,
-          le marketing digital et la data.
-        </p>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- QUALITÉS -->
-
-  <section class="white-section">
-
-    <h2 class="section-title">
-      Mes qualités professionnelles
-    </h2>
-
-    <div class="values">
-
-      <span class="value">Écoute</span>
-
-      <span class="value">Empathie</span>
-
-      <span class="value">Autonomie</span>
-
-      <span class="value">Organisation</span>
-
-      <span class="value">Adaptabilité</span>
-
-      <span class="value">Bienveillance</span>
-
-      <span class="value">Esprit d'analyse</span>
-
-      <span class="value">Sens du contact</span>
-
-    </div>
-
-  </section>
-
-
-  <!-- CONTACT -->
-
-  <section id="contact">
-
-    <h2 class="section-title">
-      Me contacter
-    </h2>
-
-    <div class="contact">
-
-      <p>
-        Vous souhaitez échanger avec moi concernant
-        mon parcours, mes compétences
-        ou une opportunité professionnelle ?
-      </p>
-
-      <p>
-        Je serai ravie d'échanger avec vous.
-      </p>
-
-    </div>
-
-  </section>
-
-
-  <!-- PIED DE PAGE -->
-
-  <footer>
-
-    <p>
-      © 2026 Mélissa Le Boëdec — Portfolio professionnel
-    </p>
-
-  </footer>
 
 </body>
 
