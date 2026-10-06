@@ -4,9 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Portfolio professionnel | Mélissa Le Boëdec</title>
 
   <style>
+
     * {
       margin: 0;
       padding: 0;
@@ -15,125 +17,154 @@
     }
 
     body {
-      font-family: Arial, sans-serif;
-      background: #faf8f5;
-      color: #333;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #faf8f5;
+      color: #343434;
       line-height: 1.7;
     }
 
+    /* MENU */
+
     nav {
-      background: white;
+      background-color: rgba(255,255,255,0.96);
       padding: 18px 8%;
       display: flex;
       justify-content: space-between;
       align-items: center;
       position: sticky;
       top: 0;
-      z-index: 10;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+      z-index: 100;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
     }
 
-    nav strong {
-      color: #755d4b;
+    .logo {
       font-size: 19px;
+      font-weight: bold;
+      color: #695547;
     }
 
-    nav a {
+    .nav-links a {
       text-decoration: none;
       color: #444;
-      margin-left: 20px;
+      margin-left: 22px;
       font-size: 14px;
+      transition: 0.3s;
     }
 
-    nav a:hover {
-      color: #8b735f;
+    .nav-links a:hover {
+      color: #8f7663;
     }
+
+    /* ACCUEIL */
 
     .hero {
       min-height: 82vh;
       display: flex;
-      justify-content: center;
       align-items: center;
-      padding: 60px 10%;
-      background: linear-gradient(135deg, #eee5dc, #f9f6f2);
+      background: linear-gradient(135deg, #eee5dc, #fbf8f4);
+      padding: 70px 10%;
     }
 
     .hero-container {
-      max-width: 1100px;
       width: 100%;
+      max-width: 1150px;
+      margin: auto;
       display: grid;
       grid-template-columns: 1.4fr 1fr;
-      gap: 60px;
+      gap: 65px;
       align-items: center;
     }
 
-    .hero-text .small-title {
+    .small-title {
       color: #8b735f;
-      font-weight: bold;
       text-transform: uppercase;
-      letter-spacing: 2px;
+      letter-spacing: 3px;
+      font-weight: bold;
+      font-size: 14px;
       margin-bottom: 12px;
     }
 
     h1 {
       font-size: 50px;
-      color: #4d4037;
-      margin-bottom: 8px;
+      line-height: 1.15;
+      color: #453a33;
+      margin-bottom: 12px;
     }
 
     .hero h2 {
-      font-size: 24px;
+      color: #755f50;
+      font-size: 23px;
       font-weight: normal;
-      color: #755d4b;
-      margin-bottom: 24px;
+      margin-bottom: 25px;
     }
 
     .hero-description {
       font-size: 18px;
       max-width: 620px;
+      color: #555;
     }
 
-    .button {
+    .main-button {
       display: inline-block;
       margin-top: 30px;
-      padding: 13px 25px;
-      background: #755d4b;
+      padding: 14px 27px;
+      background-color: #755d4b;
       color: white;
-      border-radius: 30px;
       text-decoration: none;
+      border-radius: 30px;
+      transition: 0.3s;
     }
 
-    .photo-container {
-      text-align: center;
+    .main-button:hover {
+      background-color: #5f493b;
+      transform: translateY(-2px);
     }
 
-    .photo-container img {
-      width: 300px;
-      height: 380px;
+    /* PHOTO */
+
+    .photo-wrapper {
+      display: flex;
+      justify-content: center;
+    }
+
+    .photo-wrapper img {
+      width: 310px;
+      height: 390px;
       object-fit: cover;
       object-position: center;
-      border-radius: 30px;
-      box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+      border-radius: 28px;
       border: 7px solid white;
+      box-shadow: 0 18px 40px rgba(0,0,0,0.16);
     }
+
+    /* SECTIONS */
 
     section {
-      padding: 80px 10%;
+      padding: 85px 10%;
     }
 
-    section:nth-of-type(even) {
-      background: white;
+    .white-section {
+      background-color: white;
     }
 
     .section-title {
       text-align: center;
-      color: #755d4b;
-      font-size: 32px;
-      margin-bottom: 40px;
+      font-size: 34px;
+      color: #70594a;
+      margin-bottom: 15px;
     }
 
+    .section-subtitle {
+      text-align: center;
+      color: #777;
+      max-width: 700px;
+      margin: 0 auto 45px auto;
+    }
+
+    /* À PROPOS */
+
     .about {
-      max-width: 850px;
+      max-width: 900px;
       margin: auto;
       font-size: 17px;
     }
@@ -143,194 +174,598 @@
     }
 
     .highlight {
-      background: #f3ece5;
-      padding: 25px;
-      border-radius: 15px;
-      border-left: 4px solid #a48b78;
       margin-top: 30px;
+      background-color: #f2eae2;
+      padding: 27px;
+      border-radius: 15px;
+      border-left: 5px solid #9b806c;
     }
 
+    /* COMPÉTENCES */
+
     .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-      gap: 20px;
-      max-width: 1100px;
+      max-width: 1150px;
       margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+      gap: 22px;
     }
 
     .card {
-      background: #f7f2ed;
-      padding: 25px;
-      border-radius: 15px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+      background-color: white;
+      padding: 27px;
+      border-radius: 17px;
+      box-shadow: 0 7px 25px rgba(0,0,0,0.07);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
     }
 
     .card h3 {
       color: #755d4b;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
+      font-size: 19px;
     }
 
-    .journey {
+    .card p {
+      color: #555;
+      font-size: 15px;
+    }
+
+    /* PARCOURS */
+
+    .timeline {
       max-width: 900px;
       margin: auto;
     }
 
-    .journey-item {
-      border-left: 3px solid #a48b78;
-      padding: 5px 0 25px 20px;
-      margin-bottom: 10px;
+    .timeline-item {
+      border-left: 3px solid #a68a76;
+      padding: 5px 0 30px 25px;
+      position: relative;
     }
 
-    .journey-item h3 {
-      color: #755d4b;
+    .timeline-item::before {
+      content: "";
+      width: 13px;
+      height: 13px;
+      background-color: #8f7663;
+      border-radius: 50%;
+      position: absolute;
+      left: -8px;
+      top: 8px;
     }
 
-    .contact {
-      text-align: center;
-      max-width: 700px;
+    .timeline-item h3 {
+      color: #70594a;
+      margin-bottom: 7px;
+    }
+
+    /* RÉALISATIONS */
+
+    .projects .card {
+      background-color: #f7f2ed;
+    }
+
+    /* VALEURS */
+
+    .values {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      max-width: 850px;
       margin: auto;
     }
 
-    footer {
-      background: #4d4037;
-      color: white;
-      padding: 25px;
+    .value {
+      background: #eee5dc;
+      padding: 12px 22px;
+      border-radius: 30px;
+      color: #604d40;
+      font-weight: bold;
+    }
+
+    /* CONTACT */
+
+    .contact {
+      max-width: 720px;
+      margin: auto;
       text-align: center;
+    }
+
+    .contact p {
+      font-size: 17px;
+      margin-bottom: 12px;
+    }
+
+    /* PIED DE PAGE */
+
+    footer {
+      background-color: #493d35;
+      color: white;
+      text-align: center;
+      padding: 28px 15px;
       font-size: 14px;
     }
 
-    @media (max-width: 800px) {
+    /* VERSION MOBILE */
+
+    @media (max-width: 850px) {
+
       nav {
         flex-direction: column;
         gap: 12px;
       }
 
-      nav a {
-        margin: 0 6px;
+      .nav-links {
+        text-align: center;
+      }
+
+      .nav-links a {
+        margin: 0 7px;
+        font-size: 13px;
+      }
+
+      .hero {
+        padding: 55px 7%;
       }
 
       .hero-container {
         grid-template-columns: 1fr;
         text-align: center;
+        gap: 35px;
       }
 
-      .hero-description {
-        margin: auto;
+      .photo-wrapper {
+        order: -1;
+      }
+
+      .photo-wrapper img {
+        width: 230px;
+        height: 290px;
       }
 
       h1 {
         font-size: 38px;
       }
 
-      .photo-container {
-        order: -1;
+      .hero h2 {
+        font-size: 20px;
       }
 
-      .photo-container img {
-        width: 230px;
-        height: 290px;
+      .hero-description {
+        margin: auto;
       }
+
+      section {
+        padding: 65px 7%;
+      }
+
     }
+
   </style>
+
 </head>
 
 <body>
 
-<nav>
-  <strong>Mélissa Le Boëdec</strong>
+  <!-- MENU -->
 
-  <div>
-    <a href="#apropos">À propos</a>
-    <a href="#competences">Compétences</a>
-    <a href="#parcours">Parcours</a>
-    <a href="#realisations">Réalisations</a>
-    <a href="#contact">Contact</a>
-  </div>
-</nav>
+  <nav>
 
-<header class="hero">
+    <div class="logo">
+      Mélissa Le Boëdec
+    </div>
 
-  <div class="hero-container">
+    <div class="nav-links">
+      <a href="#about">À propos</a>
+      <a href="#skills">Compétences</a>
+      <a href="#journey">Parcours</a>
+      <a href="#projects">Réalisations</a>
+      <a href="#contact">Contact</a>
+    </div>
 
-    <div class="hero-text">
+  </nav>
 
-      <p class="small-title">Portfolio professionnel</p>
 
-      <h1>Mélissa Le Boëdec</h1>
+  <!-- ACCUEIL -->
 
-      <h2>Conseillère emploi et évolution professionnelle</h2>
+  <header class="hero">
 
-      <p class="hero-description">
-        Accompagner, écouter, valoriser et permettre à chacun
-        de devenir acteur de son parcours professionnel.
-      </p>
+    <div class="hero-container">
 
-      <a class="button" href="#apropos">
-        Découvrir mon parcours
-      </a>
+      <div class="hero-text">
+
+        <p class="small-title">
+          Portfolio professionnel
+        </p>
+
+        <h1>
+          Mélissa Le Boëdec
+        </h1>
+
+        <h2>
+          Conseillère emploi et évolution professionnelle
+        </h2>
+
+        <p class="hero-description">
+          Accompagner, écouter, valoriser et permettre à chacun
+          de devenir acteur de son parcours professionnel.
+        </p>
+
+        <a class="main-button" href="#about">
+          Découvrir mon parcours
+        </a>
+
+      </div>
+
+
+      <div class="photo-wrapper">
+
+        <img
+          src="20260417_091730 (1).jpg"
+          alt="Portrait professionnel de Mélissa Le Boëdec"
+        >
+
+      </div>
 
     </div>
 
-    <div class="photo-container">
-      <img src="photo-melissa.jpg"
-     alt="Portrait professionnel de Mélissa Le Boëdec">
-    </div>
+  </header>
 
-  </div>
 
-</header>
+  <!-- À PROPOS -->
 
-<section id="apropos">
+  <section id="about" class="white-section">
 
-  <h2 class="section-title">À propos de moi</h2>
+    <h2 class="section-title">
+      À propos de moi
+    </h2>
 
-  <div class="about">
-
-    <p>
-      Mon parcours professionnel m'a permis de développer des qualités
-      essentielles telles que l'autonomie, l'adaptabilité,
-      l'organisation et le sens du contact.
+    <p class="section-subtitle">
+      Une reconversion professionnelle guidée par l'envie
+      d'accompagner et de valoriser les personnes.
     </p>
 
-    <p>
-      Après plusieurs années d'expérience professionnelle,
-      j'ai choisi de donner une nouvelle direction à mon parcours
-      en me formant dans le domaine de l'accompagnement vers l'emploi
-      et de l'évolution professionnelle.
-    </p>
 
-    <p>
-      Cette reconversion correspond à ce qui m'anime :
-      écouter, comprendre les besoins d'une personne,
-      identifier ses ressources, valoriser ses compétences
-      et l'accompagner dans la construction d'un projet professionnel
-      réaliste et motivant.
-    </p>
+    <div class="about">
 
-    <div class="highlight">
-      <strong>Ce qui me motive :</strong>
-      créer une relation de confiance, permettre à chacun
-      de prendre conscience de ses capacités et transformer
-      un objectif en étapes concrètes.
-    </div>
-
-  </div>
-
-</section>
-
-<section id="competences">
-
-  <h2 class="section-title">Mes compétences</h2>
-
-  <div class="cards">
-
-    <div class="card">
-      <h3> Accompagnement</h3>
       <p>
-        Accueillir, écouter et accompagner une personne
-        dans la construction de son parcours professionnel.
+        Mon parcours professionnel m'a permis de développer des qualités
+        essentielles telles que l'autonomie, l'adaptabilité,
+        l'organisation, le sens du service et le contact avec différents publics.
       </p>
+
+      <p>
+        Après plusieurs années d'expérience professionnelle,
+        j'ai choisi de donner une nouvelle direction à mon parcours
+        en me formant dans le domaine de l'accompagnement vers l'emploi
+        et de l'évolution professionnelle.
+      </p>
+
+      <p>
+        Cette reconversion correspond pleinement à ce qui m'anime :
+        écouter, comprendre les besoins d'une personne,
+        identifier ses ressources, valoriser ses compétences
+        et l'aider à construire un projet professionnel réaliste,
+        motivant et adapté à sa situation.
+      </p>
+
+      <div class="highlight">
+
+        <strong>Ce qui me motive :</strong><br>
+
+        Créer une relation de confiance, permettre à chacun
+        de prendre conscience de ses capacités et transformer
+        un objectif professionnel en étapes concrètes.
+
+      </div>
+
     </div>
 
-    <div class="card">
-      <h3>🔎
+  </section>
+
+
+  <!-- COMPÉTENCES -->
+
+  <section id="skills">
+
+    <h2 class="section-title">
+      Mes compétences
+    </h2>
+
+    <p class="section-subtitle">
+      Des compétences développées au cours de ma formation
+      et de mes différentes expériences professionnelles.
+    </p>
+
+
+    <div class="cards">
+
+      <div class="card">
+
+        <h3>🤝 Accompagnement</h3>
+
+        <p>
+          Accueillir, écouter et accompagner une personne
+          dans la construction et la sécurisation
+          de son parcours professionnel.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <h3>🔎 Diagnostic</h3>
+
+        <p>
+          Analyser une situation et identifier les besoins,
+          les compétences, les freins et les leviers.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <h3>🎯 Projet professionnel</h3>
+
+        <p>
+          Aider à définir un objectif professionnel
+          et construire un plan d'action adapté.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <h3>💼 Recherche d'emploi</h3>
+
+        <p>
+          Accompagner la réalisation du CV,
+          de la lettre de motivation,
+          du pitch et la préparation aux entretiens.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <h3>📊 Veille professionnelle</h3>
+
+        <p>
+          Rechercher, sélectionner et analyser
+          des informations relatives à l'emploi,
+          la formation et au marché du travail.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <h3>🗣️ Animation d'ateliers</h3>
+
+        <p>
+          Concevoir et animer des ateliers
+          favorisant l'autonomie,
+          l'information et la valorisation des compétences.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PARCOURS -->
+
+  <section id="journey" class="white-section">
+
+    <h2 class="section-title">
+      Mon parcours
+    </h2>
+
+    <p class="section-subtitle">
+      Un parcours professionnel riche d'expériences
+      et aujourd'hui tourné vers l'accompagnement.
+    </p>
+
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+
+        <h3>2026 — Formation professionnelle</h3>
+
+        <p>
+          Formation dans le domaine du conseil en emploi
+          et de l'évolution professionnelle.
+        </p>
+
+      </div>
+
+
+      <div class="timeline-item">
+
+        <h3>Expériences professionnelles</h3>
+
+        <p>
+          Plusieurs années d'expérience dans des environnements
+          professionnels variés m'ayant permis de développer
+          autonomie, organisation, adaptabilité,
+          sens des responsabilités et relation client.
+        </p>
+
+      </div>
+
+
+      <div class="timeline-item">
+
+        <h3>Une reconversion tournée vers l'humain</h3>
+
+        <p>
+          Aujourd'hui, je souhaite mettre mes compétences,
+          mon expérience et mes qualités relationnelles
+          au service de l'accompagnement professionnel.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- RÉALISATIONS -->
+
+  <section id="projects" class="projects">
+
+    <h2 class="section-title">
+      Mes réalisations
+    </h2>
+
+    <p class="section-subtitle">
+      Quelques exemples de travaux réalisés
+      au cours de ma formation.
+    </p>
+
+
+    <div class="cards">
+
+      <div class="card">
+
+        <h3>📍 Étude du bassin d'emploi d'Agen</h3>
+
+        <p>
+          Analyse du territoire,
+          du marché du travail,
+          des secteurs qui recrutent
+          et des principaux acteurs de l'emploi.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <h3>📋 Diagnostic professionnel</h3>
+
+        <p>
+          Analyse d'une situation,
+          identification des besoins
+          et construction d'un accompagnement individualisé.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <h3>🎤 Marketing de soi</h3>
+
+        <p>
+          Travail autour du CV,
+          de la lettre de motivation,
+          du pitch professionnel
+          et de la valorisation des compétences.
+        </p>
+
+      </div>
+
+
+      <div class="card">
+
+        <h3>🤖 IA et évolution des métiers</h3>
+
+        <p>
+          Création d'un atelier autour
+          de l'intelligence artificielle
+          et de son impact sur différents métiers,
+          notamment le développement web,
+          le marketing digital et la data.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- QUALITÉS -->
+
+  <section class="white-section">
+
+    <h2 class="section-title">
+      Mes qualités professionnelles
+    </h2>
+
+    <div class="values">
+
+      <span class="value">Écoute</span>
+
+      <span class="value">Empathie</span>
+
+      <span class="value">Autonomie</span>
+
+      <span class="value">Organisation</span>
+
+      <span class="value">Adaptabilité</span>
+
+      <span class="value">Bienveillance</span>
+
+      <span class="value">Esprit d'analyse</span>
+
+      <span class="value">Sens du contact</span>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT -->
+
+  <section id="contact">
+
+    <h2 class="section-title">
+      Me contacter
+    </h2>
+
+    <div class="contact">
+
+      <p>
+        Vous souhaitez échanger avec moi concernant
+        mon parcours, mes compétences
+        ou une opportunité professionnelle ?
+      </p>
+
+      <p>
+        Je serai ravie d'échanger avec vous.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- PIED DE PAGE -->
+
+  <footer>
+
+    <p>
+      © 2026 Mélissa Le Boëdec — Portfolio professionnel
+    </p>
+
+  </footer>
+
+</body>
+
+</html>
