@@ -5,10 +5,7 @@
 
   <meta charset="UTF-8">
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <meta
     name="description"
@@ -21,10 +18,6 @@
 
 
   <style>
-
-    /* ========================================
-       RÉGLAGES GÉNÉRAUX
-    ======================================== */
 
     * {
       margin: 0;
@@ -49,9 +42,7 @@
     }
 
 
-    /* ========================================
-       MENU
-    ======================================== */
+    /* MENU */
 
     nav {
       background-color: rgba(255, 255, 255, 0.97);
@@ -62,7 +53,7 @@
       position: sticky;
       top: 0;
       z-index: 1000;
-      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
     }
 
     .logo {
@@ -73,13 +64,13 @@
 
     .nav-links {
       display: flex;
-      align-items: center;
       flex-wrap: wrap;
+      align-items: center;
     }
 
     .nav-links a {
       text-decoration: none;
-      color: #444444;
+      color: #444;
       margin-left: 20px;
       font-size: 14px;
     }
@@ -89,21 +80,14 @@
     }
 
 
-    /* ========================================
-       ACCUEIL
-    ======================================== */
+    /* ACCUEIL */
 
     .hero {
       min-height: 82vh;
       display: flex;
       align-items: center;
-      background:
-        linear-gradient(
-          135deg,
-          #eee5dc,
-          #fbf8f4
-        );
       padding: 70px 10%;
+      background: linear-gradient(135deg, #eee5dc, #fbf8f4);
     }
 
     .hero-container {
@@ -142,13 +126,11 @@
     .hero-description {
       max-width: 620px;
       font-size: 18px;
-      color: #555555;
+      color: #555;
     }
 
 
-    /* ========================================
-       PHOTO
-    ======================================== */
+    /* PHOTO */
 
     .photo-wrapper {
       display: flex;
@@ -162,13 +144,11 @@
       object-position: center;
       border-radius: 28px;
       border: 7px solid white;
-      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.16);
+      box-shadow: 0 18px 40px rgba(0,0,0,0.16);
     }
 
 
-    /* ========================================
-       BOUTONS
-    ======================================== */
+    /* BOUTONS */
 
     .buttons {
       display: flex;
@@ -213,14 +193,18 @@
       transform: translateY(-2px);
     }
 
+    .button-small {
+      padding: 10px 17px;
+      min-height: 42px;
+      font-size: 13px;
+    }
 
-    /* ========================================
-       SECTIONS
-    ======================================== */
+
+    /* SECTIONS */
 
     section {
       padding: 85px 10%;
-      scroll-margin-top: 80px;
+      scroll-margin-top: 90px;
     }
 
     .white-section {
@@ -236,16 +220,14 @@
 
     .section-subtitle {
       text-align: center;
-      color: #777777;
-      max-width: 730px;
+      color: #777;
+      max-width: 750px;
       margin: 0 auto 45px;
       font-size: 16px;
     }
 
 
-    /* ========================================
-       À PROPOS
-    ======================================== */
+    /* À PROPOS */
 
     .about {
       max-width: 900px;
@@ -270,16 +252,13 @@
     }
 
 
-    /* ========================================
-       COMPÉTENCES
-    ======================================== */
+    /* CARTES */
 
     .cards {
       max-width: 1150px;
       margin: auto;
       display: grid;
-      grid-template-columns:
-        repeat(auto-fit, minmax(245px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
       gap: 22px;
     }
 
@@ -287,13 +266,13 @@
       background-color: white;
       padding: 27px;
       border-radius: 17px;
-      box-shadow: 0 7px 25px rgba(0, 0, 0, 0.07);
+      box-shadow: 0 7px 25px rgba(0,0,0,0.07);
       transition: 0.3s;
     }
 
     .card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.10);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.10);
     }
 
     .card h3 {
@@ -303,14 +282,12 @@
     }
 
     .card p {
-      color: #555555;
+      color: #555;
       font-size: 15px;
     }
 
 
-    /* ========================================
-       PARCOURS
-    ======================================== */
+    /* PARCOURS */
 
     .timeline {
       max-width: 900px;
@@ -340,64 +317,118 @@
     }
 
     .timeline-item p {
-      color: #555555;
+      color: #555;
     }
 
 
-    /* ========================================
-       RÉALISATIONS
-    ======================================== */
+    /* PROJETS */
 
     .project-card {
       background-color: #f7f2ed;
-      text-decoration: none;
-      color: inherit;
-      display: block;
+      display: flex;
+      flex-direction: column;
     }
 
-    .project-card span {
+    .project-number {
       display: inline-block;
-      margin-top: 18px;
+      width: fit-content;
+      background-color: #755d4b;
+      color: white;
+      padding: 5px 11px;
+      border-radius: 20px;
+      font-size: 12px;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    .participation-label {
+      background-color: #9b806c;
+    }
+
+    .project-skills {
+      margin-top: 17px;
+      font-size: 13px;
       color: #755d4b;
       font-weight: bold;
     }
 
+    .project-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
     .project-detail {
-      max-width: 900px;
-      margin: 40px auto 0;
-      padding: 32px;
-      border-radius: 18px;
+      max-width: 950px;
+      margin: 45px auto 0;
+      padding: 35px;
+      border-radius: 20px;
       background-color: white;
-      box-shadow: 0 7px 25px rgba(0, 0, 0, 0.06);
+      box-shadow: 0 7px 25px rgba(0,0,0,0.07);
       scroll-margin-top: 110px;
     }
 
     .project-detail h3 {
       color: #70594a;
-      margin-bottom: 12px;
-      font-size: 23px;
+      margin-bottom: 16px;
+      font-size: 25px;
+    }
+
+    .project-detail h4 {
+      color: #755d4b;
+      margin-top: 24px;
+      margin-bottom: 8px;
+      font-size: 17px;
     }
 
     .project-detail p {
       margin-bottom: 12px;
     }
 
-    .project-detail strong {
+    .project-detail ul {
+      margin: 8px 0 18px 25px;
+    }
+
+    .project-detail li {
+      margin-bottom: 6px;
+    }
+
+    .project-stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 15px;
+      margin: 25px 0;
+    }
+
+    .stat {
+      background-color: #f2eae2;
+      border-radius: 15px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 25px;
       color: #70594a;
+    }
+
+    .stat span {
+      font-size: 13px;
+      color: #666;
     }
 
     .back-link {
       display: inline-block;
-      margin-top: 15px;
+      margin-top: 20px;
       color: #755d4b;
       font-weight: bold;
       text-decoration: none;
     }
 
 
-    /* ========================================
-       QUALITÉS
-    ======================================== */
+    /* QUALITÉS */
 
     .values {
       display: flex;
@@ -417,16 +448,13 @@
     }
 
 
-    /* ========================================
-       DOCUMENTS
-    ======================================== */
+    /* DOCUMENTS */
 
     .documents {
       max-width: 950px;
       margin: auto;
       display: grid;
-      grid-template-columns:
-        repeat(auto-fit, minmax(240px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 22px;
     }
 
@@ -435,7 +463,7 @@
       border-radius: 17px;
       padding: 30px 25px;
       text-align: center;
-      box-shadow: 0 7px 25px rgba(0, 0, 0, 0.07);
+      box-shadow: 0 7px 25px rgba(0,0,0,0.07);
     }
 
     .document-card .icon {
@@ -449,15 +477,13 @@
     }
 
     .document-card p {
-      color: #666666;
+      color: #666;
       font-size: 14px;
       margin-bottom: 20px;
     }
 
 
-    /* ========================================
-       CONTACT
-    ======================================== */
+    /* CONTACT */
 
     .contact {
       max-width: 720px;
@@ -479,9 +505,7 @@
     }
 
 
-    /* ========================================
-       FOOTER
-    ======================================== */
+    /* FOOTER */
 
     footer {
       background-color: #493d35;
@@ -492,9 +516,7 @@
     }
 
 
-    /* ========================================
-       VERSION MOBILE
-    ======================================== */
+    /* MOBILE */
 
     @media (max-width: 850px) {
 
@@ -569,7 +591,8 @@
         font-size: 32px;
       }
 
-      .buttons {
+      .buttons,
+      .project-buttons {
         flex-direction: column;
       }
 
@@ -587,1072 +610,687 @@
 <body>
 
 
-  <!-- ========================================
-       MENU
-  ========================================= -->
+<!-- MENU -->
 
-  <nav>
+<nav>
 
-    <div class="logo">
-      Mélissa Le Boëdec
-    </div>
+  <div class="logo">
+    Mélissa Le Boëdec
+  </div>
 
-    <div class="nav-links">
+  <div class="nav-links">
 
-      <a href="#about">
-        À propos
-      </a>
+    <a href="#about">À propos</a>
+    <a href="#skills">Compétences</a>
+    <a href="#journey">Parcours</a>
+    <a href="#projects">Projets</a>
+    <a href="#documents">Documents</a>
+    <a href="#contact">Contact</a>
 
-      <a href="#skills">
-        Compétences
-      </a>
+  </div>
 
-      <a href="#journey">
-        Parcours
-      </a>
-
-      <a href="#projects">
-        Réalisations
-      </a>
-
-      <a href="#documents">
-        Documents
-      </a>
-
-      <a href="#contact">
-        Contact
-      </a>
-
-    </div>
-
-  </nav>
+</nav>
 
 
-  <!-- ========================================
-       ACCUEIL
-  ========================================= -->
+<!-- ACCUEIL -->
 
-  <header class="hero">
+<header class="hero">
 
-    <div class="hero-container">
+  <div class="hero-container">
 
+    <div>
 
-      <div>
+      <p class="small-title">
+        Portfolio professionnel
+      </p>
 
-        <p class="small-title">
-          Portfolio professionnel
-        </p>
+      <h1>
+        Mélissa Le Boëdec
+      </h1>
 
+      <h2>
+        Conseillère emploi et évolution professionnelle
+      </h2>
 
-        <h1>
-          Mélissa Le Boëdec
-        </h1>
-
-
-        <h2>
-          Conseillère emploi et évolution professionnelle
-        </h2>
-
-
-        <p class="hero-description">
-
-          Accompagner, écouter, valoriser
-          et permettre à chacun de devenir acteur
-          de son parcours professionnel.
-
-        </p>
-
-
-        <div class="buttons">
-
-
-          <a
-            class="button button-main"
-            href="#about"
-          >
-            Découvrir mon parcours
-          </a>
-
-
-          <a
-            class="button button-secondary"
-            href="CV_MELISSA_LE%20BOEDEC.pdf"
-            target="_blank"
-          >
-            📄 Voir mon CV
-          </a>
-
-
-          <a
-            class="button button-secondary"
-            href="lettre-motivation-melissa-le-boedec.pdf"
-            target="_blank"
-          >
-            ✉️ Lettre de motivation
-          </a>
-
-
-          <a
-            class="button button-secondary"
-            href="https://www.linkedin.com/in/melissa-le-boedec-265b60304/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            in LinkedIn
-          </a>
-
-
-        </div>
-
-      </div>
-
-
-      <div class="photo-wrapper">
-
-        <img
-          src="20260417_091730%20(1).jpg"
-          alt="Portrait professionnel de Mélissa Le Boëdec"
-        >
-
-      </div>
-
-
-    </div>
-
-  </header>
-
-
-  <!-- ========================================
-       À PROPOS
-  ========================================= -->
-
-  <section
-    id="about"
-    class="white-section"
-  >
-
-    <h2 class="section-title">
-      À propos de moi
-    </h2>
-
-
-    <p class="section-subtitle">
-
-      Une reconversion professionnelle
-      guidée par l'envie d'accompagner,
-      d'écouter et de valoriser les personnes.
-
-    </p>
-
-
-    <div class="about">
-
-
-      <p>
-
-        Mon parcours professionnel m'a permis
-        de développer des qualités essentielles
-        telles que l'autonomie, l'adaptabilité,
-        l'organisation, le sens du service
-        et le contact avec différents publics.
-
+      <p class="hero-description">
+        Accompagner, écouter, valoriser
+        et permettre à chacun de devenir acteur
+        de son parcours professionnel.
       </p>
 
 
-      <p>
-
-        Après plusieurs années d'expérience professionnelle,
-        j'ai choisi de donner une nouvelle direction
-        à mon parcours en me formant dans le domaine
-        de l'accompagnement vers l'emploi
-        et de l'évolution professionnelle.
-
-      </p>
-
-
-      <p>
-
-        Cette reconversion correspond pleinement
-        à ce qui m'anime :
-        écouter, comprendre les besoins d'une personne,
-        identifier ses ressources,
-        valoriser ses compétences
-        et l'aider à construire un projet professionnel
-        réaliste, motivant et adapté à sa situation.
-
-      </p>
-
-
-      <div class="highlight">
-
-        <strong>
-          Ce qui me motive :
-        </strong>
-
-        <br><br>
-
-        Créer une relation de confiance,
-        permettre à chacun de prendre conscience
-        de ses capacités
-        et transformer un objectif professionnel
-        en étapes concrètes.
-
-      </div>
-
-
-    </div>
-
-  </section>
-
-
-  <!-- ========================================
-       COMPÉTENCES
-  ========================================= -->
-
-  <section id="skills">
-
-    <h2 class="section-title">
-      Mes compétences
-    </h2>
-
-
-    <p class="section-subtitle">
-
-      Des compétences développées
-      au cours de ma formation
-      et de mes différentes expériences professionnelles.
-
-    </p>
-
-
-    <div class="cards">
-
-
-      <div class="card">
-
-        <h3>
-          🤝 Accompagnement
-        </h3>
-
-        <p>
-
-          Accueillir, écouter et accompagner
-          une personne dans la construction
-          et la sécurisation de son parcours professionnel.
-
-        </p>
-
-      </div>
-
-
-      <div class="card">
-
-        <h3>
-          🔎 Diagnostic
-        </h3>
-
-        <p>
-
-          Analyser une situation
-          et identifier les besoins,
-          les compétences, les freins
-          et les leviers.
-
-        </p>
-
-      </div>
-
-
-      <div class="card">
-
-        <h3>
-          🎯 Projet professionnel
-        </h3>
-
-        <p>
-
-          Aider à définir un objectif professionnel
-          et construire un plan d'action
-          adapté à la situation.
-
-        </p>
-
-      </div>
-
-
-      <div class="card">
-
-        <h3>
-          💼 Recherche d'emploi
-        </h3>
-
-        <p>
-
-          Accompagner dans la réalisation du CV,
-          de la lettre de motivation,
-          du pitch professionnel
-          et la préparation aux entretiens.
-
-        </p>
-
-      </div>
-
-
-      <div class="card">
-
-        <h3>
-          📊 Veille professionnelle
-        </h3>
-
-        <p>
-
-          Rechercher, sélectionner
-          et analyser des informations
-          liées à l'emploi, à la formation
-          et au marché du travail.
-
-        </p>
-
-      </div>
-
-
-      <div class="card">
-
-        <h3>
-          🗣️ Animation d'ateliers
-        </h3>
-
-        <p>
-
-          Concevoir et animer des ateliers
-          favorisant l'autonomie,
-          l'information et la valorisation
-          des compétences.
-
-        </p>
-
-      </div>
-
-
-    </div>
-
-  </section>
-
-
-  <!-- ========================================
-       PARCOURS
-  ========================================= -->
-
-  <section
-    id="journey"
-    class="white-section"
-  >
-
-    <h2 class="section-title">
-      Mon parcours
-    </h2>
-
-
-    <p class="section-subtitle">
-
-      Un parcours professionnel riche d'expériences
-      et aujourd'hui tourné vers l'accompagnement.
-
-    </p>
-
-
-    <div class="timeline">
-
-
-      <div class="timeline-item">
-
-        <h3>
-          2026 — Formation professionnelle
-        </h3>
-
-        <p>
-
-          Formation dans le domaine
-          du conseil en emploi
-          et de l'évolution professionnelle,
-          avec développement de compétences
-          liées à l'accompagnement,
-          au diagnostic,
-          à l'emploi et à la formation.
-
-        </p>
-
-      </div>
-
-
-      <div class="timeline-item">
-
-        <h3>
-          Relation client et commerce
-        </h3>
-
-        <p>
-
-          Des expériences professionnelles
-          dans la vente et la relation client
-          m'ayant permis de développer
-          écoute, communication,
-          conseil et sens du service.
-
-        </p>
-
-      </div>
-
-
-      <div class="timeline-item">
-
-        <h3>
-          Expérience de terrain
-        </h3>
-
-        <p>
-
-          Plusieurs années d'expérience professionnelle
-          m'ont permis de renforcer
-          mon autonomie, mon organisation,
-          ma rigueur, mon adaptabilité
-          et mon sens des responsabilités.
-
-        </p>
-
-      </div>
-
-
-      <div class="timeline-item">
-
-        <h3>
-          Aujourd'hui
-        </h3>
-
-        <p>
-
-          Mon objectif est de mettre
-          mon expérience, mes compétences
-          et mes qualités relationnelles
-          au service de l'accompagnement
-          vers l'emploi et de l'évolution professionnelle.
-
-        </p>
-
-      </div>
-
-
-    </div>
-
-  </section>
-
-
-  <!-- ========================================
-       RÉALISATIONS
-  ========================================= -->
-
-  <section id="projects">
-
-
-    <h2 class="section-title">
-      Mes réalisations
-    </h2>
-
-
-    <p class="section-subtitle">
-
-      Quelques exemples de travaux
-      réalisés au cours de ma formation.
-      Cliquez sur un projet pour le découvrir.
-
-    </p>
-
-
-    <div class="cards">
-
-
-      <a
-        class="card project-card"
-        href="#project-agen"
-      >
-
-        <h3>
-          📍 Étude du bassin d'emploi d'Agen
-        </h3>
-
-        <p>
-
-          Analyse du marché du travail,
-          des secteurs qui recrutent
-          et des acteurs du territoire.
-
-        </p>
-
-        <span>
-          Découvrir le projet →
-        </span>
-
-      </a>
-
-
-      <a
-        class="card project-card"
-        href="#project-diagnostic"
-      >
-
-        <h3>
-          📋 Diagnostic professionnel
-        </h3>
-
-        <p>
-
-          Analyse d'une situation
-          et construction
-          d'un accompagnement individualisé.
-
-        </p>
-
-        <span>
-          Découvrir le projet →
-        </span>
-
-      </a>
-
-
-      <a
-        class="card project-card"
-        href="#project-marketing"
-      >
-
-        <h3>
-          🎤 Marketing de soi
-        </h3>
-
-        <p>
-
-          CV, lettre de motivation,
-          pitch professionnel
-          et valorisation des compétences.
-
-        </p>
-
-        <span>
-          Découvrir le projet →
-        </span>
-
-      </a>
-
-
-      <a
-        class="card project-card"
-        href="#project-ia"
-      >
-
-        <h3>
-          🤖 IA et évolution des métiers
-        </h3>
-
-        <p>
-
-          Création d'un atelier
-          autour de l'intelligence artificielle
-          et de son impact sur les métiers.
-
-        </p>
-
-        <span>
-          Découvrir le projet →
-        </span>
-
-      </a>
-
-
-    </div>
-
-
-    <!-- PROJET AGEN -->
-
-    <div
-      id="project-agen"
-      class="project-detail"
-    >
-
-      <h3>
-        📍 Étude du bassin d'emploi d'Agen
-      </h3>
-
-
-      <p>
-
-        Analyse du fonctionnement
-        du marché de l'emploi
-        sur le bassin d'Agen.
-
-      </p>
-
-
-      <p>
-
-        <strong>
-          Travail réalisé :
-        </strong>
-
-        recherche de données,
-        analyse des secteurs d'activité,
-        identification des métiers qui recrutent
-        et repérage des acteurs du territoire.
-
-      </p>
-
-
-      <p>
-
-        <strong>
-          Compétences mobilisées :
-        </strong>
-
-        veille, analyse,
-        synthèse et connaissance du territoire.
-
-      </p>
-
-
-      <a
-        class="back-link"
-        href="#projects"
-      >
-        ↑ Retour aux réalisations
-      </a>
-
-    </div>
-
-
-    <!-- PROJET DIAGNOSTIC -->
-
-    <div
-      id="project-diagnostic"
-      class="project-detail"
-    >
-
-      <h3>
-        📋 Diagnostic professionnel
-      </h3>
-
-
-      <p>
-
-        Analyse permettant d'identifier
-        la situation, les besoins,
-        les ressources, les compétences
-        et les éventuels freins
-        d'une personne accompagnée.
-
-      </p>
-
-
-      <p>
-
-        <strong>
-          Objectif :
-        </strong>
-
-        construire un accompagnement individualisé
-        et un plan d'action réaliste.
-
-      </p>
-
-
-      <p>
-
-        <strong>
-          Compétences mobilisées :
-        </strong>
-
-        écoute active,
-        analyse, reformulation
-        et construction d'objectifs.
-
-      </p>
-
-
-      <a
-        class="back-link"
-        href="#projects"
-      >
-        ↑ Retour aux réalisations
-      </a>
-
-    </div>
-
-
-    <!-- PROJET MARKETING -->
-
-    <div
-      id="project-marketing"
-      class="project-detail"
-    >
-
-      <h3>
-        🎤 Atelier Marketing de soi
-      </h3>
-
-
-      <p>
-
-        Création d'un atelier
-        consacré à la valorisation
-        du profil professionnel.
-
-      </p>
-
-
-      <p>
-
-        Travail autour du CV,
-        de la lettre de motivation,
-        du pitch professionnel
-        et de la mise en valeur des compétences.
-
-      </p>
-
-
-      <p>
-
-        <strong>
-          Compétences mobilisées :
-        </strong>
-
-        animation,
-        communication,
-        conception d'outils
-        et accompagnement à la recherche d'emploi.
-
-      </p>
-
-
-      <a
-        class="back-link"
-        href="#projects"
-      >
-        ↑ Retour aux réalisations
-      </a>
-
-    </div>
-
-
-    <!-- PROJET IA -->
-
-    <div
-      id="project-ia"
-      class="project-detail"
-    >
-
-      <h3>
-        🤖 IA et évolution des métiers
-      </h3>
-
-
-      <p>
-
-        Création d'un atelier
-        consacré à l'intelligence artificielle
-        et à son influence
-        sur l'évolution des métiers.
-
-      </p>
-
-
-      <p>
-
-        Le travail a notamment porté
-        sur le développement web,
-        le marketing digital
-        et les métiers de la data.
-
-      </p>
-
-
-      <p>
-
-        <strong>
-          Compétences mobilisées :
-        </strong>
-
-        veille,
-        analyse des métiers,
-        conception pédagogique
-        et animation.
-
-      </p>
-
-
-      <a
-        class="back-link"
-        href="#projects"
-      >
-        ↑ Retour aux réalisations
-      </a>
-
-    </div>
-
-
-  </section>
-
-
-  <!-- ========================================
-       QUALITÉS
-  ========================================= -->
-
-  <section class="white-section">
-
-
-    <h2 class="section-title">
-      Mes qualités professionnelles
-    </h2>
-
-
-    <p class="section-subtitle">
-
-      Des qualités que je souhaite mettre
-      au service des personnes accompagnées
-      et de mon futur environnement professionnel.
-
-    </p>
-
-
-    <div class="values">
-
-      <span class="value">
-        Écoute
-      </span>
-
-      <span class="value">
-        Empathie
-      </span>
-
-      <span class="value">
-        Autonomie
-      </span>
-
-      <span class="value">
-        Organisation
-      </span>
-
-      <span class="value">
-        Adaptabilité
-      </span>
-
-      <span class="value">
-        Bienveillance
-      </span>
-
-      <span class="value">
-        Esprit d'analyse
-      </span>
-
-      <span class="value">
-        Sens du contact
-      </span>
-
-    </div>
-
-
-  </section>
-
-
-  <!-- ========================================
-       DOCUMENTS
-  ========================================= -->
-
-  <section id="documents">
-
-
-    <h2 class="section-title">
-      Mes documents
-    </h2>
-
-
-    <p class="section-subtitle">
-
-      Retrouvez ici les principaux documents
-      permettant de découvrir
-      plus précisément mon profil professionnel.
-
-    </p>
-
-
-    <div class="documents">
-
-
-      <div class="document-card">
-
-        <div class="icon">
-          📄
-        </div>
-
-        <h3>
-          Mon CV
-        </h3>
-
-        <p>
-          Retrouvez mon parcours,
-          mes formations,
-          mes expériences et mes compétences.
-        </p>
+      <div class="buttons">
 
         <a
           class="button button-main"
-          href="CV_MELISSA_LE%20BOEDEC.pdf"
-          target="_blank"
+          href="#about"
         >
-          Consulter mon CV
+          Découvrir mon parcours
         </a>
-
-      </div>
-
-
-      <div class="document-card">
-
-        <div class="icon">
-          ✉️
-        </div>
-
-        <h3>
-          Lettre de motivation
-        </h3>
-
-        <p>
-          Découvrez mes motivations,
-          mon projet professionnel
-          et ce qui m'anime dans l'accompagnement.
-        </p>
-
-        <a
-          class="button button-main"
-          href="lettre-motivation-melissa-le-boedec.pdf"
-          target="_blank"
-        >
-          Lire ma lettre
-        </a>
-
-      </div>
-
-
-      <div class="document-card">
-
-        <div class="icon">
-          💼
-        </div>
-
-        <h3>
-          LinkedIn
-        </h3>
-
-        <p>
-          Retrouvez mon profil professionnel
-          et mon parcours sur LinkedIn.
-        </p>
-
-        <a
-          class="button button-main"
-          href="https://www.linkedin.com/in/melissa-le-boedec-265b60304/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Voir mon LinkedIn
-        </a>
-
-      </div>
-
-
-    </div>
-
-
-  </section>
-
-
-  <!-- ========================================
-       CONTACT
-  ========================================= -->
-
-  <section
-    id="contact"
-    class="white-section"
-  >
-
-
-    <h2 class="section-title">
-      Me contacter
-    </h2>
-
-
-    <p class="section-subtitle">
-
-      Une opportunité professionnelle,
-      une question sur mon parcours
-      ou simplement l'envie d'échanger ?
-
-    </p>
-
-
-    <div class="contact">
-
-
-      <p>
-
-        Je serai ravie d'échanger avec vous
-        concernant mon parcours,
-        mes compétences
-        ou mon projet professionnel.
-
-      </p>
-
-
-      <div class="contact-buttons">
-
-
-        <a
-          class="button button-main"
-          href="https://www.linkedin.com/in/melissa-le-boedec-265b60304/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          💼 Me contacter via LinkedIn
-        </a>
-
 
         <a
           class="button button-secondary"
           href="CV_MELISSA_LE%20BOEDEC.pdf"
           target="_blank"
         >
-          📄 Consulter mon CV
+          📄 Voir mon CV
         </a>
 
+        <a
+          class="button button-secondary"
+          href="lettre-motivation-melissa-le-boedec.pdf"
+          target="_blank"
+        >
+          ✉️ Lettre de motivation
+        </a>
+
+        <a
+          class="button button-secondary"
+          href="https://www.linkedin.com/in/melissa-le-boedec-265b60304/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          in LinkedIn
+        </a>
 
       </div>
-
 
     </div>
 
 
-  </section>
+    <div class="photo-wrapper">
+
+      <img
+        src="20260417_091730%20(1).jpg"
+        alt="Portrait professionnel de Mélissa Le Boëdec"
+      >
+
+    </div>
+
+  </div>
+
+</header>
 
 
-  <!-- ========================================
-       PIED DE PAGE
-  ========================================= -->
+<!-- À PROPOS -->
 
-  <footer>
+<section
+  id="about"
+  class="white-section"
+>
+
+  <h2 class="section-title">
+    À propos de moi
+  </h2>
+
+  <p class="section-subtitle">
+    Une reconversion professionnelle guidée
+    par l'envie d'accompagner,
+    d'écouter et de valoriser les personnes.
+  </p>
+
+
+  <div class="about">
 
     <p>
-      © 2026 Mélissa Le Boëdec
-      — Portfolio professionnel
+      Mon parcours professionnel m'a permis
+      de développer des qualités essentielles
+      telles que l'autonomie, l'adaptabilité,
+      l'organisation, le sens du service
+      et le contact avec différents publics.
     </p>
 
-  </footer>
+    <p>
+      Après plusieurs années d'expérience professionnelle,
+      j'ai choisi de donner une nouvelle direction
+      à mon parcours en me formant dans le domaine
+      de l'accompagnement vers l'emploi
+      et de l'évolution professionnelle.
+    </p>
+
+    <p>
+      Cette reconversion correspond pleinement
+      à ce qui m'anime :
+      écouter, comprendre les besoins d'une personne,
+      identifier ses ressources,
+      valoriser ses compétences
+      et l'aider à construire un projet professionnel
+      réaliste, motivant et adapté à sa situation.
+    </p>
+
+    <div class="highlight">
+
+      <strong>
+        Ce qui me motive :
+      </strong>
+
+      <br><br>
+
+      Créer une relation de confiance,
+      permettre à chacun de prendre conscience
+      de ses capacités
+      et transformer un objectif professionnel
+      en étapes concrètes.
+
+    </div>
+
+  </div>
+
+</section>
 
 
-</body>
+<!-- COMPÉTENCES -->
 
-</html>
+<section id="skills">
+
+  <h2 class="section-title">
+    Mes compétences
+  </h2>
+
+  <p class="section-subtitle">
+    Des compétences développées
+    au cours de ma formation
+    et de mes différentes expériences professionnelles.
+  </p>
+
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>🤝 Accompagnement</h3>
+      <p>
+        Accueillir, écouter et accompagner
+        une personne dans la construction
+        et la sécurisation de son parcours professionnel.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>🔎 Diagnostic</h3>
+      <p>
+        Analyser une situation
+        et identifier les besoins,
+        les compétences, les freins
+        et les leviers.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>🎯 Projet professionnel</h3>
+      <p>
+        Aider à définir un objectif professionnel
+        et construire un plan d'action adapté.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>💼 Recherche d'emploi</h3>
+      <p>
+        CV, lettre de motivation,
+        pitch professionnel
+        et préparation aux entretiens.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>📊 Veille professionnelle</h3>
+      <p>
+        Rechercher, sélectionner
+        et analyser des informations
+        liées à l'emploi, à la formation
+        et au marché du travail.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>🗣️ Animation d'ateliers</h3>
+      <p>
+        Concevoir et animer des ateliers
+        favorisant l'autonomie,
+        l'information et la valorisation
+        des compétences.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- PARCOURS -->
+
+<section
+  id="journey"
+  class="white-section"
+>
+
+  <h2 class="section-title">
+    Mon parcours
+  </h2>
+
+  <p class="section-subtitle">
+    Un parcours professionnel riche d'expériences
+    et aujourd'hui tourné vers l'accompagnement.
+  </p>
+
+
+  <div class="timeline">
+
+    <div class="timeline-item">
+
+      <h3>
+        2026 — Formation professionnelle
+      </h3>
+
+      <p>
+        Formation dans le domaine
+        du conseil en emploi
+        et de l'évolution professionnelle.
+      </p>
+
+    </div>
+
+
+    <div class="timeline-item">
+
+      <h3>
+        Relation client et commerce
+      </h3>
+
+      <p>
+        Expériences dans la vente
+        et la relation client
+        ayant permis de développer
+        écoute, conseil,
+        communication et sens du service.
+      </p>
+
+    </div>
+
+
+    <div class="timeline-item">
+
+      <h3>
+        Expérience de terrain
+      </h3>
+
+      <p>
+        Plusieurs années d'expérience
+        m'ont permis de renforcer
+        autonomie, organisation,
+        rigueur, adaptabilité
+        et sens des responsabilités.
+      </p>
+
+    </div>
+
+
+    <div class="timeline-item">
+
+      <h3>
+        Mon objectif
+      </h3>
+
+      <p>
+        Mettre mon expérience,
+        mes compétences
+        et mes qualités relationnelles
+        au service de l'accompagnement
+        vers l'emploi.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- PROJETS ET EXPÉRIENCES -->
+
+<section id="projects">
+
+  <h2 class="section-title">
+    Mes projets et expériences de formation
+  </h2>
+
+  <p class="section-subtitle">
+    Des projets conçus dans le cadre de ma formation,
+    ainsi que des expériences et ateliers
+    ayant contribué au développement de mes compétences.
+  </p>
+
+
+  <div class="cards">
+
+
+    <!-- PROJET 8 -->
+
+    <div class="card project-card">
+
+      <span class="project-number">
+        PROJET 8
+      </span>
+
+      <h3>
+        🤖 Atelier « Les métiers du numérique »
+      </h3>
+
+      <p>
+        Conception d'un atelier collectif
+        consacré aux métiers du marketing digital,
+        du développement web et de la data,
+        dans un contexte d'évolution liée à l'IA.
+      </p>
+
+      <p class="project-skills">
+        Veille • Animation • Orientation • Conception pédagogique
+      </p>
+
+
+      <div class="project-buttons">
+
+        <a
+          class="button button-main button-small"
+          href="#project-8"
+        >
+          Découvrir le projet
+        </a>
+
+        <a
+          class="button button-secondary button-small"
+          href="Projet-8-atelier-ia.zip"
+          download
+        >
+          📦 Télécharger le dossier
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <!-- PROJET 9 -->
+
+    <div class="card project-card">
+
+      <span class="project-number">
+        PROJET 9
+      </span>
+
+      <h3>
+        🤝 Passerelles Emploi 47
+      </h3>
+
+      <p>
+        Conception d'un projet territorial
+        visant à rapprocher demandeurs d'emploi,
+        entreprises, organismes de formation
+        et acteurs de l'accompagnement.
+      </p>
+
+      <p class="project-skills">
+        Diagnostic territorial • Partenariat • Gestion de projet • Évaluation
+      </p>
+
+
+      <div class="project-buttons">
+
+        <a
+          class="button button-main button-small"
+          href="#project-9"
+        >
+          Découvrir le projet
+        </a>
+
+        <a
+          class="button button-secondary button-small"
+          href="projet-9-passerelles-emploi-47.zip"
+          download
+        >
+          📦 Télécharger le dossier
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <!-- ÉTUDE DU BASSIN -->
+
+    <div class="card project-card">
+
+      <span class="project-number">
+        TRAVAIL DE FORMATION
+      </span>
+
+      <h3>
+        📍 Étude du bassin d'emploi d'Agen
+      </h3>
+
+      <p>
+        Analyse du marché du travail,
+        des secteurs qui recrutent
+        et des principaux acteurs
+        de l'emploi et de la formation.
+      </p>
+
+      <p class="project-skills">
+        Veille • Analyse • Synthèse • Connaissance du territoire
+      </p>
+
+    </div>
+
+
+    <!-- TINGARI -->
+
+    <div class="card project-card">
+
+      <span class="project-number participation-label">
+        ATELIER SUIVI
+      </span>
+
+      <h3>
+        🎤 Marketing de soi — Tingari
+      </h3>
+
+      <p>
+        Participation à un atelier proposé par Tingari
+        autour de la valorisation du profil professionnel,
+        du CV, de la lettre de motivation,
+        du pitch et de la présentation de ses compétences.
+      </p>
+
+      <p class="project-skills">
+        Valorisation professionnelle • Communication • Recherche d'emploi • Connaissance de soi
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <!-- DÉTAIL PROJET 8 -->
+
+  <div
+    id="project-8"
+    class="project-detail"
+  >
+
+    <span class="project-number">
+      PROJET 8
+    </span>
+
+    <h3>
+      🤖 Atelier « Les métiers du numérique »
+    </h3>
+
+    <p>
+      J'ai conçu un atelier collectif
+      permettant aux participants
+      de découvrir et mieux comprendre
+      les opportunités professionnelles
+      dans le secteur du numérique.
+    </p>
+
+
+    <h4>
+      🎯 Objectifs
+    </h4>
+
+    <ul>
+
+      <li>
+        Découvrir les métiers
+        du marketing digital,
+        du développement web
+        et de la data.
+      </li>
+
+      <li>
+        Comprendre leurs missions
+        et leurs compétences clés.
+      </li>
+
+      <li>
+        Identifier les qualités humaines
+        recherchées par les recruteurs.
+      </li>
+
+      <li>
+        Découvrir différentes voies de formation.
+      </li>
+
+      <li>
+        Accompagner les participants
+        dans leur réflexion professionnelle.
+      </li>
+
+    </ul>
+
+
+    <h4>
+      🕘 Organisation
+    </h4>
+
+    <p>
+      Atelier collectif de trois heures,
+      de 9h00 à 12h00,
+      alternant présentation,
+      échanges, vidéos,
+      activités interactives
+      et évaluation.
+    </p>
+
+
+    <h4>
+      💡 Compétences mobilisées
+    </h4>
+
+    <p>
+      Veille sur les métiers,
+      conception pédagogique,
+      création de supports,
+      animation collective,
+      transmission d'informations
+      et accompagnement à l'orientation.
+    </p>
+
+
+    <div class="project-buttons">
+
+      <a
+        class="button button-main button-small"
+        href="Projet-8-atelier-ia.zip"
+        download
+      >
+        📦 Télécharger le projet complet
+      </a>
+
+    </div>
+
+
+    <a
+      class="back-link"
+      href="#projects"
+    >
+      ↑ Retour aux projets
+    </a>
+
+  </div>
+
+
+  <!-- DÉTAIL PROJET 9 -->
+
+  <div
+    id="project-9"
+    class="project-detail"
+  >
+
+    <span class="project-number">
+      PROJET 9
+    </span>
+
+    <h3>
+      🤝 Passerelles Emploi 47
+    </h3>
+
+    <p>
+      Conception d'un forum territorial
+      destiné à favoriser la rencontre
+      entre demandeurs d'emploi,
+      entreprises, organismes de formation
+      et professionnels de l'accompagnement
+      sur le bassin étudié.
+    </p>
+
+
+    <div class="project-stats">
+
+      <div class="stat">
+
+        <strong>
+          3 390
+        </strong>
+
+        <span>
+          projets de recrutement
+        </span>
+
+      </div>
+
+
+      <div class="stat">
+
+        <strong>
+          53,4 %
+        </strong>
+
+        <span>
+          recrutements jugés difficiles
+        </span>
+
+      </div>
+
+
+      <div class="stat">
+
+        <strong>
+          74,9 %
+        </strong>
+
+        <span>
+          recrutements saisonniers
+        </span>
+
+      </div>
+
+    </div>
+
+
+    <h4>
+      🎯 Objectif
+    </h4>
+
+    <p>
+      Faciliter la rencontre entre les différents acteurs,
