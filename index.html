@@ -18,6 +18,346 @@
 
     body {
       font-family: Arial, Helvetica, sans-serif;
+      background: #faf8f5;
+      color: #343434;
+      line-height: 1.7;
+    }
+
+    /* MENU */
+
+    nav {
+      background: rgba(255,255,255,0.97);
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+
+    .logo {
+      font-size: 19px;
+      font-weight: bold;
+      color: #695547;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #444;
+      margin-left: 20px;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #8f7663;
+    }
+
+    /* ACCUEIL */
+
+    .hero {
+      min-height: 82vh;
+      display: flex;
+      align-items: center;
+      padding: 70px 10%;
+      background: linear-gradient(135deg, #eee5dc, #fbf8f4);
+    }
+
+    .hero-container {
+      width: 100%;
+      max-width: 1150px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1.4fr 1fr;
+      gap: 65px;
+      align-items: center;
+    }
+
+    .small-title {
+      color: #8b735f;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-weight: bold;
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: 50px;
+      line-height: 1.15;
+      color: #453a33;
+      margin-bottom: 12px;
+    }
+
+    .hero h2 {
+      color: #755f50;
+      font-size: 23px;
+      font-weight: normal;
+      margin-bottom: 25px;
+    }
+
+    .hero-description {
+      font-size: 18px;
+      max-width: 620px;
+      color: #555;
+    }
+
+    /* BOUTONS */
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 13px 24px;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: 0.3s;
+      font-weight: 500;
+    }
+
+    .button-main {
+      background: #755d4b;
+      color: white;
+    }
+
+    .button-main:hover {
+      background: #5f493b;
+      transform: translateY(-2px);
+    }
+
+    .button-secondary {
+      border: 2px solid #755d4b;
+      color: #755d4b;
+      background: transparent;
+    }
+
+    .button-secondary:hover {
+      background: #755d4b;
+      color: white;
+    }
+
+    /* PHOTO */
+
+    .photo-wrapper {
+      display: flex;
+      justify-content: center;
+    }
+
+    .photo-wrapper img {
+      width: 310px;
+      height: 390px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 28px;
+      border: 7px solid white;
+      box-shadow: 0 18px 40px rgba(0,0,0,0.16);
+    }
+
+    /* SECTIONS */
+
+    section {
+      padding: 85px 10%;
+    }
+
+    .white-section {
+      background: white;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 34px;
+      color: #70594a;
+      margin-bottom: 15px;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      color: #777;
+      max-width: 720px;
+      margin: 0 auto 45px;
+    }
+
+    /* À PROPOS */
+
+    .about {
+      max-width: 900px;
+      margin: auto;
+      font-size: 17px;
+    }
+
+    .about p {
+      margin-bottom: 20px;
+    }
+
+    .highlight {
+      margin-top: 30px;
+      background: #f2eae2;
+      padding: 27px;
+      border-radius: 15px;
+      border-left: 5px solid #9b806c;
+    }
+
+    /* CARTES */
+
+    .cards {
+      max-width: 1150px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      padding: 27px;
+      border-radius: 17px;
+      box-shadow: 0 7px 25px rgba(0,0,0,0.07);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      color: #755d4b;
+      margin-bottom: 12px;
+      font-size: 19px;
+    }
+
+    .card p {
+      color: #555;
+      font-size: 15px;
+    }
+
+    /* PARCOURS */
+
+    .timeline {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .timeline-item {
+      border-left: 3px solid #a68a76;
+      padding: 5px 0 30px 25px;
+      position: relative;
+    }
+
+    .timeline-item::before {
+      content: "";
+      width: 13px;
+      height: 13px;
+      background: #8f7663;
+      border-radius: 50%;
+      position: absolute;
+      left: -8px;
+      top: 8px;
+    }
+
+    .timeline-item h3 {
+      color: #70594a;
+      margin-bottom: 7px;
+    }
+
+    /* PROJETS */
+
+    .project-card {
+      background: #f7f2ed;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .project-card span {
+      display: inline-block;
+      margin-top: 18px;
+      color: #755d4b;
+      font-weight: bold;
+    }
+
+    .project-detail {
+      max-width: 900px;
+      margin: 40px auto 0;
+      padding: 32px;
+      border-radius: 18px;
+      background: white;
+      box-shadow: 0 7px 25px rgba(0,0,0,0.06);
+      scroll-margin-top: 100px;
+    }
+
+    .project-detail h3 {
+      color: #70594a;
+      margin-bottom: 12px;
+      font-size: 23px;
+    }
+
+    .project-detail p {
+      margin-bottom: 12px;
+    }
+
+    .project-detail strong {
+      color: #70594a;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 15px;
+      color: #755d4b;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    /* QUALITÉS */
+
+    .values {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .value {
+      background: #eee5dc;
+      padding: 12px 22px;
+      border-radius: 30px;
+      color: #604d40;
+      font-weight: bold;
+    }
+
+    /* CONTACT */
+
+    .contact
+
+Le mar. 6 oct. 2026, 13:43, Melissa le boedec <melissa.leboedec47@gmail.com> a écrit :
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Portfolio professionnel | Mélissa Le Boëdec</title>
+
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
       background-color: #faf8f5;
       color: #343434;
       line-height: 1.7;
